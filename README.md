@@ -6,7 +6,10 @@ Nurvitadhi, Eriko, et al. "GraphGen: An FPGA framework for vertex-centric graph 
 
 Ozdal, Muhammet Mustafa, et al. "Energy efficient architecture for graph analytics accelerators." Computer Architecture (ISCA), 2016 ACM/IEEE 43rd Annual International Symposium on. IEEE, 2016.
 
+
+
 Research Groups on Database Query Acceleration
+
 
 Readling List
 
