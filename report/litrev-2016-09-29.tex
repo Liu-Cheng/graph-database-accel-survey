@@ -1,0 +1,15 @@
+\section{Accelerator Design for Graph Analytics}
+This paper \cite{ozdal2016energy} is essentially a graph accelerator implementation framework of Gather-Apply-Scatter model as in
+GraphLab. It particularly focuses on iterative graph-parallel applications with asynchronous
+execution and asymmetric convergence. In order to support domain of graph processing, it has a
+template of hardware for common operations including memory access, synchronization and
+communication. In order to provide application specific optimization, a design space exploration is
+also supported like typical domain specific accelerators.
+
+\subsection{Highlights}
+Here are the list of highlights of this work.
+\begin{itemize}
+    \item It targets graph applications with asynchronous execution and asymmetric convergence which
+        doesn't work well on GPUs.
+    \item It developed a synchronous unit (SYU) to support sequential consistency model. 
+\end{itemize}

@@ -1,0 +1,114 @@
+\section{Q100} % Major section
+\subsection{Highlight}
+The authors developed an ASIP processor for database query operations \cite{wu2015q100, wu2014q100}. 
+The customized instructions are consist of a series of sub components. They can either be used in
+temporal computing or spacial computing manner. With temporal computing, each operation consumes
+minimal hardware taking longer execution time but allowing more parallel operations. With spacial 
+computing manner, each operation can be done in a shorter time leaving less hardware resource for
+multiple parallel operations. Typically, each instruction is corresponding to a specific primitive
+query operation and executes in the granularity of an primitive operation, though some of the dependent
+instructions may work in a stream with less memory access.
+
+The communication bandwidth and off-chip memory bandwidth to the ASIP processor are also discussed.
+A few interesting observations are presented and may be used to guide the design of accelerators for
+database query.
+
+\begin{itemize}
+    \item Memory read bandwidth requirement is much larger than that of memory write. In this paper,
+        the former is almost three times larger than the latter.
+    \item On chip interconnection is used to perform the communication between the different
+        computing tiles which are implementations of different instructions. As the communication
+        pattern is not uniform and the communication infrastructure can be optimized/customized as well.
+    \item Most of the operations are not sensitive to the number of computing tiles, communication
+        bandwidth and off-chip memory bandwidth, while some of them are very sensitive. This
+        complicates the hardware design.
+\end{itemize}
+
+\subsection{Questions}
+How does the ASIP instruction access the main memory? There is no load/store instruction specialized
+for the processor. Probably the instruction is able to access the main memory directly which is
+similar to the hardware accelerator system.
+
+Why the speedup drops 10X when the dataset is 100X larger? 
+Is there any scalability problem in current design?
+
+\subsection{Random ideas for improvement}
+The Q100 and LINQits have diverse design constraints. 
+
+LINQits: 1G main memory $<<$ Main memory in Q100 \\
+LINQits: 1GB/s DDR bandwidth $<<$ 5-20GB/s DDR bandwidth in Q100 \\
+
+Will it be a reason for the different design
+choices? Is it possible to propose new architecture for different design constraints?
+
+\subsection{Additional questions}
+
+\section{LINQits}
+\subsection{Highlight}
+The authors provide a configurable acceleration framework LINQits to support a domain specific query
+language LINQ \cite{chung2013linqits}. LINQits divides the collections into smaller
+partitions and the computing with the granularity of a partition is processed on FPGAs. 
+The type of the partition based computing is relatively limited
+and regular and thus supported in the proposed hardware template either on pre-processing or
+post-processing block. Basically, the hardware template reads a partition, streams it to a queue,  
+processes the stream and then writes back to main memory. The process continues until the end of the
+partition. All the operations are supported in the template and specific operation can be selected
+at runtime. In other words, the user-defined blocks are the same and can be replicated together with
+the queues and the partition readers/writers easily. In this sense, it is more like an ASIC
+prototype rather than a design making best use of FPGAs.
+
+Although there are not much details about how the partitioned computing
+eventually complete the overall computing task, I guess it is probably handled on ARM.
+
+Compared to Q100, it explicitly manages the on-chip memory and communication between the processor
+and the accelerators. Q100 integrates everything including memory access and computing into a
+specialized instruction. Communication is mostly done through main memory unless two operations
+are combined as one. In addition, the accelerator design is developed to be homogeneous and can be
+configured to support various operations. Q100 provides specialized circuits for different
+operations/instructions.
+
+\subsection{Questions}
+How is the multi-pass partition implemented? 
+It seems the partition is done by ARM processor while FPGA just has a partition reader to 
+read the partitioned data from main memory.
+
+Why the author emphasizes on the divide-and-conquer algorithm? How does LINQits benefit from the
+algorithm?
+
+How does the LINQits coalesce the memory access? 
+
+\subsection{Random ideas for improvement}
+How much we can do to find the opportunity of fusing the basic computing operations? 
+Is it possible to automatically decide the fused computing operations? Is it possible to develop
+hardware template for arbitrary fused operations?
+
+As mentioned in the paper, the power consumption of the system can be a major constraints in future
+system. However, the paper mainly focus on the performance of the system instead of power
+consumption. Is it possible to develop a hardware accelerated data query system in the purpose of
+power efficiency? According to the power consumption
+distribution presented in the paper, DDR access and on-chip memory (i.e. BRAM) consume the majority of
+the power consumption which I think should be around 70-80\%. of the overall power. Is it possible
+to develop a more efficient memory architecture for higher power efficiency?  
+
+In Q100, the authors mentioned that the performance benefit degrades with larger dataset. Will it be
+similar in LINQits? If so, how can we scale the performance on such a system for larger database
+processing?  
+
+\textbf{What can we do to improve the power efficiency of the database query accelerator?} 
+\begin{itemize}
+\item Interconnection: Packet switched network on chip can be replaced with circuit 
+    switched network on chip such that the NoC can be efficient used for communication purpose. 
+    Application specifc netwrok based on the traffic characteristic works as well.
+
+\item On chip memory: Power off/clock gate when it is not used, improve data reuse through
+    pipelining, improve DDR access efficiency like memory coalescing, 
+    make best use of scratch pad memory to reduce the DDR access, on-line data compression
+
+\item Hardware Architecture: With sufficient parallelism in the application, use efficient
+    sequential logic instead of highly fine-grained parallel logic to improve the utilization 
+    of the computing logic, Serialize corner case logic and parallelize frequent logic or 
+even offload the corner case, ...
+
+\item General solutions: adding user specific logic for clock gating, lower the computing precision,
+    dynamically power off the unused part of the system, DVFS on processor when it is not needed.
+\end{itemize}
