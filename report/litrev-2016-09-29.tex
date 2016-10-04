@@ -1,6 +1,5 @@
 \section{Accelerator Design for Graph Analytics}
-This paper \cite{ozdal2016energy} is essentially a graph accelerator implementation framework of Gather-Apply-Scatter model as in
-GraphLab. It particularly focuses on iterative graph-parallel applications with asynchronous
+This paper \cite{ozdal2016energy} is essentially a graph accelerator implementation framework of Gather-Apply-Scatter model as in GraphLab \cite{nurvitadhi2014graphgen}. It particularly focuses on iterative graph-parallel applications with asynchronous
 execution and asymmetric convergence. In order to support domain of graph processing, it has a
 template of hardware for common operations including memory access, synchronization and
 communication. In order to provide application specific optimization, a design space exploration is
@@ -10,6 +9,16 @@ also supported like typical domain specific accelerators.
 Here are the list of highlights of this work.
 \begin{itemize}
     \item It targets graph applications with asynchronous execution and asymmetric convergence which
-        doesn't work well on GPUs.
-    \item It developed a synchronous unit (SYU) to support sequential consistency model. 
+        doesn't work well on GPUs. This is also one of the major reasons that contributes to the the high power efficiency.
+    \item It provides a hardware version of GraphLab \cite{nurvitadhi2014graphgen} and maintains sequential consistency model with a synchronous unit (SYU) which essentially follows the edge consistency. 
+    \item memory access optimization: It has special cache, load, store units for each data type such as vertex information (VI) and edge information (EI). The cache structure is also configurable to meet the requirements of as VI and EI which have different locality characteristic. 
+    \item Graph partition: The framework has each accelerator optimized for fine grained operation level parallelism. And it also replicates the accelerator unit to explore high-level parallelism based on a static graph partition.
 \end{itemize}
+
+\subsection{Questions}
+Is it necessary to maintain sequential consistency, will it be possible to loose the consistency model for more parallelism and higher performance?
+
+According to the , cache architecture may not be a good memory hierarchy for graph processing as the graph problems typically has poor locality. 
+
+\subsection{Terminology}
+Compressed sparse row format is used to store graph in memory.
