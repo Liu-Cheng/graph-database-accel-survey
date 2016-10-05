@@ -18,7 +18,22 @@ Here are the list of highlights of this work.
 \subsection{Questions}
 Is it necessary to maintain sequential consistency, will it be possible to loose the consistency model for more parallelism and higher performance?
 
-According to the , cache architecture may not be a good memory hierarchy for graph processing as the graph problems typically has poor locality. 
+According to the Graphicionado \cite{hamgra2016phicionado}, cache may not be a good memory hierarchy for graph processing as the graph problems typically has poor locality. Will a scratch pad memory work better for this design? This work utilize vertex and edge as the basic cache granularity instead of general data type may probably alleviate the problem.
 
-\subsection{Terminology}
-Compressed sparse row format is used to store graph in memory.
+The graph partition is not detailed, how does the partition affect the overall system performance? 
+
+
+\section{Graphicioando}
+This paper utilize GraphMat \cite{sundaram2015graphmat} as the graph processing framework. With the observation that graph processing has ineffective usage of both on-chip memory and bandwidth, this work particularly optimizes the on chip memory usage over the baseline hardware accelerator obtained from GraphMat. 
+
+According to the pipeline of the baseline accelerator, the on chip memory access characteristics of the different pipeline stages are analyzed and a few optimizations are applied to remove the bottleneck of the accelerator pipeline. Here are the list of the major optimizations.
+\begin{itemize}
+    \item It uses on-chip eDRAM as scratchpad memory to alleviate the random destination vertex and edge ID access. For the rest of the sequential memory access, a prefetch scheme is used to hide the memory access latency,
+    \item Instead of replicating the accelerator directly, the authors divide the processing phase into source oriented portion and destination oriented portion. With this strategy, the hardware can be easily partitioned into parts without overlaps. Basically, the scratchpad memory is shared among the vertex processing streams. 
+    \item The number of edges are typically much larger than that of the vertex, so the edge access is usually a bottleneck of the accelerator design. This work uses an array of input queues and output queues connected with a crossbar to access memory and feed data to the downstream processing. 
+    \item In order to cope with graphs with larger scratchpad memory requirements, the graph is sliced, though the slicing is a simple one.
+\end{itemize}
+
+\section{Database query with hardware/software co-design}
+This work is supposed to handle OLTP, but it doesn't show any special design for OLTP system.
+
