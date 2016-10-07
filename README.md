@@ -6,6 +6,7 @@
 
 ## Reading List
 
+### Graph Processing
 - Nurvitadhi, Eriko, et al. "GraphGen: An FPGA framework for vertex-centric graph computation." Field-Programmable Custom Computing Machines (FCCM), 2014 IEEE 22nd Annual International Symposium on. IEEE, 2014.
 
 - Ozdal, Muhammet Mustafa, et al. "Energy efficient architecture for graph analytics accelerators." Computer Architecture (ISCA), 2016 ACM/IEEE 43rd Annual International Symposium on. IEEE, 2016.
@@ -26,12 +27,30 @@
 
 - Kyrola, Aapo, Guy Blelloch, and Carlos Guestrin. "GraphChi: large-scale graph computation on just a PC." Presented as part of the 10th USENIX Symposium on Operating Systems Design and Implementation (OSDI 12). 2012.
 
+### Graph Compression
+- Zhou, Fang. "Graph compression." Department of Computer Science and Helsinki Institute for Information Technology HIIT (2015): 1-12.
+
 ## Research Groups on Database Query Acceleration
 - [Xtra Computing Group] (http://pdcc.ntu.edu.sg/xtra/)
 
 ## Readling List
 
+### Database Query Acceleration
 - Sukhwani, Bharat, et al. "A hardware/software approach for database query acceleration with fpgas." International Journal of Parallel Programming 43.6 (2015): 1129-1159.
 
 - Dennl, Christopher, Daniel Ziener, and Jurgen Teich. "On-the-fly composition of FPGA-based SQL query accelerators using a partially reconfigurable module library." Field-Programmable Custom Computing Machines (FCCM), 2012 IEEE 20th Annual International Symposium on. IEEE, 2012.
+
+- Wu, Lisa, et al. "The Q100 Database Processing Unit." IEEE Micro 35.3 (2015): 34-46. 
+
+- Chung, Eric S., John D. Davis, and Jaewon Lee. "Linqits: Big data on little clients." ACM SIGARCH Computer Architecture News. Vol. 41. No. 3. ACM, 2013. 
+
+- Halstead, Robert J., et al. "FPGA-based Multithreading for In-Memory Hash Joins." CIDR. 2015.
+
+- Chen, Ren, and Viktor K. Prasanna. "Accelerating Equi-Join on a CPU-FPGA Heterogeneous Platform." 
+
+- Wang, Zeke, Bingsheng He, and Wei Zhang. "A study of data partitioning on OpenCL-based FPGAs." 2015 25th International Conference on Field Programmable Logic and Applications (FPL). IEEE, 2015.
+
+### Database Compression
+-
+
 
