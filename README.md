@@ -27,6 +27,20 @@
 
 - Kyrola, Aapo, Guy Blelloch, and Carlos Guestrin. "GraphChi: large-scale graph computation on just a PC." Presented as part of the 10th USENIX Symposium on Operating Systems Design and Implementation (OSDI 12). 2012.
 
+- U. Bondhugula, A. Devulapalli, J. Fernando, P. Wyckoff and P. Sadayappan, "Parallel FPGA-based all-pairs shortest-paths in a directed graph," Proceedings 20th IEEE International Parallel & Distributed Processing Symposium, 2006
+
+- A. Abdolrashidi and L. Ramaswamy, "Continual and Cost-Effective Partitioning of Dynamic Graphs for Optimizing Big Graph Processing Systems," 2016 IEEE International Congress on Big Data (BigData Congress), San Francisco, CA, USA, 2016
+
+- Guohao Dai, Yuze Chi, Yu Wang, and Huazhong Yang. 2016. FPGP: Graph Processing Framework on FPGA A Case Study of Breadth-First Search. In Proceedings of the 2016 ACM/SIGDA International Symposium on Field-Programmable Gate Arrays 
+
+- M. Sadoghi, R. Javed, N. Tarafdar, H. Singh, R. Palaniappan and H. A. Jacobsen, "Multi-query Stream Processing on FPGAs," 2012 IEEE 28th International Conference on Data Engineering, Washington, DC, 2012, pp. 1229-1232.
+
+- N. Engelhardt and H. K. H. So, "GraVF: A vertex-centric distributed graph processing framework on FPGAs," 2016 26th International Conference on Field Programmable Logic and Applications (FPL), Lausanne, Switzerland, 2016, pp. 1-4.
+
+- Bingsheng He, Jianlong Zhong, "Medusa: Simplified Graph Processing on GPUs", IEEE Transactions on Parallel & Distributed Systems
+
+
+
 ### Graph Compression
 - Zhou, Fang. "Graph compression." Department of Computer Science and Helsinki Institute for Information Technology HIIT (2015): 1-12.
 
@@ -49,6 +63,8 @@
 - Chen, Ren, and Viktor K. Prasanna. "Accelerating Equi-Join on a CPU-FPGA Heterogeneous Platform." 
 
 - Wang, Zeke, Bingsheng He, and Wei Zhang. "A study of data partitioning on OpenCL-based FPGAs." 2015 25th International Conference on Field Programmable Logic and Applications (FPL). IEEE, 2015.
+
+- R. R. Bordawekar and M. Sadoghi, "Accelerating database workloads by software-hardware-system co-design," 2016 IEEE 32nd International Conference on Data Engineering (ICDE), Helsinki, 2016, pp. 1428-1431.
 
 ### Database Compression
 -
