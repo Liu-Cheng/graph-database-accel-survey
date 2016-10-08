@@ -40,9 +40,10 @@
 - Bingsheng He, Jianlong Zhong, "Medusa: Simplified Graph Processing on GPUs", IEEE Transactions on Parallel & Distributed Systems
 
 
-
 ### Graph Compression
 - Zhou, Fang. "Graph compression." Department of Computer Science and Helsinki Institute for Information Technology HIIT (2015): 1-12.
+
+- S. Chen and J. H. Reif. 1996. Efficient Lossless Compression of Trees and Graphs. In Proceedings of the Conference on Data Compression (DCC '96). IEEE Computer Society, Washington
 
 ## Research Groups on Database Query Acceleration
 - [Xtra Computing Group] (http://pdcc.ntu.edu.sg/xtra/)
@@ -66,7 +67,13 @@
 
 - R. R. Bordawekar and M. Sadoghi, "Accelerating database workloads by software-hardware-system co-design," 2016 IEEE 32nd International Conference on Data Engineering (ICDE), Helsinki, 2016, pp. 1428-1431.
 
+- Guo, Cong and Martin Karsten. “Towards Adaptive Resource Allocation for Database Workloads.” ADMS@VLDB (2015).
+
+- Johns Paul, Jiong He, and Bingsheng He. 2016. GPL: A GPU-based Pipelined Query Processing Engine. In Proceedings of the 2016 International Conference on Management of Data (SIGMOD '16). ACM, New York, NY
+
+- Jared Casper and Kunle Olukotun. 2014. Hardware acceleration of database operations. In Proceedings of the 2014 ACM/SIGDA international symposium on Field-programmable gate arrays (FPGA '14)
+
 ### Database Compression
--
+-  
 
 
