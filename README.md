@@ -39,11 +39,16 @@
 
 - Bingsheng He, Jianlong Zhong, "Medusa: Simplified Graph Processing on GPUs", IEEE Transactions on Parallel & Distributed Systems
 
+- Andreas Beckmann, Ulrich Meyer and David, Veith, "An Implementation of I/O-Efficient Dynamic Breadth-First Search Using Level-Aligned Hierarchical Clustering", 21st Annual European Symposium of Algorithms (ESA), 2013. 
 
 ### Graph Compression
 - Zhou, Fang. "Graph compression." Department of Computer Science and Helsinki Institute for Information Technology HIIT (2015): 1-12.
 
 - S. Chen and J. H. Reif. 1996. Efficient Lossless Compression of Trees and Graphs. In Proceedings of the Conference on Data Compression (DCC '96). IEEE Computer Society, Washington
+
+- Sebastian Maneth and Fabian Peternek, "A Survey on Methods and Systems for Graph Compression", Journal of CoRR, 2015 
+
+- Sparsh Mittal and Jeffrey S. Vetter. 2016. A Survey Of Architectural Approaches for Data Compression in Cache and Main Memory Systems. IEEE Trans. Parallel Distrib. Syst. 27, 5 (May 2016), 1524-1536.  
 
 ## Research Groups on Database Query Acceleration
 - [Xtra Computing Group] (http://pdcc.ntu.edu.sg/xtra/)
@@ -73,7 +78,15 @@
 
 - Jared Casper and Kunle Olukotun. 2014. Hardware acceleration of database operations. In Proceedings of the 2014 ACM/SIGDA international symposium on Field-programmable gate arrays (FPGA '14)
 
+- Gokul Soundararajan, Daniel Lupei, Saeed Ghanbari, Adrian Daniel Popescu, Jin Chen, and Cristiana Amza. 2009. Dynamic resource allocation for database servers running on virtual storage. In Proccedings of the 7th conference on File and storage technologies (FAST '09), Margo Seltzer and Ric Wheeler (Eds.). USENIX Association, Berkeley, CA, USA, 71-84.
+
+- Bingsheng He and Jeffrey Xu Yu. 2011. High-throughput transaction executions on graphics processors. Proc. VLDB Endow. 4, 5 (February 2011), 314-325.
+
+- Bharat Sukhwani, Hong Min, Mathew Thoennes, Parijat Dube, Bernard Brezzo, Sameh Asaad, Donna Eng Dillenberger, "Database Analytics: A Reconfigurable-Computing Approach", IEEE Micro vol. 34 no. 1, p. 19-29, Jan.-Feb., 2014
+
+- Shuang Chen, Shunning Jiang, Bingsheng He, and Xueyan Tang. 2016. A Study of Sorting Algorithms on Approximate Memory. In Proceedings of the 2016 International Conference on Management of Data (SIGMOD '16). ACM, New York, NY, USA, 647-662.  
+
 ### Database Compression
--  
+- Lang, Harald, Tobias Mühlbauer, Florian Funke, Peter A. Boncz, Thomas Neumann and Alfons Kemper. “Data Blocks: Hybrid OLTP and OLAP on Compressed Storage using both Vectorization and Compilation.” SIGMOD Conference (2016).  
 
 
