@@ -1,4 +1,20 @@
 # Literature Review
+## Conferences
+- [ISCA2016] (http://isca2016.eecs.umich.edu/)
+- [Micro2016]
+- [ASPLOS2016]
+- [HPCA2016]
+- [SC2016]
+- [VLDB2016]
+- [ICDE2016]
+- [SIGMOD2016]
+- [FCCM2016]
+- [FPGA2016]
+- [FPL2016] (http://www.fpl2016.org/)
+- [FPT2016]
+- [ASAP2016]
+
+
 ## Research Groups on Graph Acceleration Research
 - [GAP] (http://gap.cs.berkeley.edu/)
 - [GPS] (http://infolab.stanford.edu/gps/)
@@ -85,6 +101,10 @@
 - Bharat Sukhwani, Hong Min, Mathew Thoennes, Parijat Dube, Bernard Brezzo, Sameh Asaad, Donna Eng Dillenberger, "Database Analytics: A Reconfigurable-Computing Approach", IEEE Micro vol. 34 no. 1, p. 19-29, Jan.-Feb., 2014
 
 - Shuang Chen, Shunning Jiang, Bingsheng He, and Xueyan Tang. 2016. A Study of Sorting Algorithms on Approximate Memory. In Proceedings of the 2016 International Conference on Management of Data (SIGMOD '16). ACM, New York, NY, USA, 647-662.  
+
+-  Gustavo Alonso, "Data Processing on the fast lane", Systems Group, Department of Computer Science, ETH Zurich, Switzerland, FPL keynote, 2016.
+
+- Zeke Wang, Huiyan Cheah, Johns Paul, Bingsheng He, and Wei Zhang. 2016. Accelerating Database Query Processing on OpenCL-based FPGAs (Abstract Only). In Proceedings of the 2016 ACM/SIGDA International Symposium on Field-Programmable Gate Arrays (FPGA '16). ACM, New York, NY
 
 ### Database Compression
 - Lang, Harald, Tobias Mühlbauer, Florian Funke, Peter A. Boncz, Thomas Neumann and Alfons Kemper. “Data Blocks: Hybrid OLTP and OLAP on Compressed Storage using both Vectorization and Compilation.” SIGMOD Conference (2016).  
