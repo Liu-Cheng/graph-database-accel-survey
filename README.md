@@ -19,7 +19,7 @@
 - [GAP] (http://gap.cs.berkeley.edu/)
 - [GPS] (http://infolab.stanford.edu/gps/)
 - [Big Graph Mining] (http://datalab.snu.ac.kr/projects/big-graph-mining)
-
+- [amplab: GraphX](https://amplab.cs.berkeley.edu/projects/graphx/)
 ## Reading List
 
 ### Graph Processing
@@ -57,6 +57,26 @@
 
 - Andreas Beckmann, Ulrich Meyer and David, Veith, "An Implementation of I/O-Efficient Dynamic Breadth-First Search Using Level-Aligned Hierarchical Clustering", 21st Annual European Symposium of Algorithms (ESA), 2013. 
 
+- Sabeur Aridhi, Alberto Montresor, and Yannis Velegrakis. 2016. BLADYG: A Novel Block-Centric Framework for the Analysis of Large Dynamic Graphs. In Proceedings of the ACM Workshop on High Performance Graph Processing (HPGP '16). ACM, New York, NY, USA
+
+- Yuze Chi, Guohao Dai, Yu Wang, Guangyu Sun, Guoliang Li, Huazhong Yang, "NXgraph: An Efficient Graph Processing System on a Single Machine", CoRR, 2015
+
+- Junwhan Ahn, Sungpack Hong, Sungjoo Yoo, Onur Mutlu, and Kiyoung Choi. 2015. A scalable processing-in-memory accelerator for parallel graph processing. In Proceedings of the 42nd Annual International Symposium on Computer Architecture (ISCA '15). ACM, New York, NY, USA, 105-117.
+
+- Sengupta, Dipanjan, et al. "Graphin: An online high performance incremental graph processing framework." European Conference on Parallel Processing. Springer International Publishing, 2016.
+
+- Xirogiannopoulos, Konstantinos, Udayan Khurana, and Amol Deshpande. "GraphGen: exploring interesting graphs in relational data." Proceedings of the VLDB Endowment 8.12 (2015): 2032-2035.
+
+- Khayyat, Zuhair, et al. "Mizan: a system for dynamic load balancing in large-scale graph processing." Proceedings of the 8th ACM European Conference on Computer Systems. ACM, 2013.
+
+- Doekemeijer, Niels, and Ana Lucia Varbanescu. "A survey of parallel graph processing frameworks." Delft University of Technology (2014).
+
+- Steinbauer, Matthias, and Gabriele Anderst-Kotsis. "DynamoGraph: A Distributed System for Large-scale, Temporal Graph Processing, its Implementation and First Observations." Proceedings of the 25th International Conference Companion on World Wide Web. International World Wide Web Conferences Steering Committee, 2016.
+
+- Steinbauer, Matthias, and Gabriele Anderst-Kotsis. "DynamoGraph: extending the Pregel paradigm for large-scale temporal graph processing." International Journal of Grid and Utility Computing 7.2 (2016): 141-151.
+
+- Anand Padmanabha Iyer, Li Erran Li, Tathagata Das, and Ion Stoica. 2016. Time-evolving graph processing at scale. In Proceedings of the Fourth International Workshop on Graph Data Management Experiences and Systems (GRADES '16). ACM, New York, NY, USA
+
 ### Graph Compression
 - Zhou, Fang. "Graph compression." Department of Computer Science and Helsinki Institute for Information Technology HIIT (2015): 1-12.
 
@@ -66,8 +86,11 @@
 
 - Sparsh Mittal and Jeffrey S. Vetter. 2016. A Survey Of Architectural Approaches for Data Compression in Cache and Main Memory Systems. IEEE Trans. Parallel Distrib. Syst. 27, 5 (May 2016), 1524-1536.  
 
+- Vito Giovanni Castellana, Marco Minutoli, Alessandro Morari, Antonino Tumeo, Marco Lattuada, and Fabrizio Ferrandi. 2015. High Level Synthesis of RDF Queries for Graph Analytics. In Proceedings of the IEEE/ACM International Conference on Computer-Aided Design (ICCAD '15). IEEE Press, Piscataway, NJ, USA, 323-330.
+
 ## Research Groups on Database Query Acceleration
 - [Xtra Computing Group] (http://pdcc.ntu.edu.sg/xtra/)
+- [amplab] (https://amplab.cs.berkeley.edu/projects/succinct-enabling-queries-on-compressed-data/)
 
 ## Readling List
 
@@ -107,6 +130,15 @@
 - Zeke Wang, Huiyan Cheah, Johns Paul, Bingsheng He, and Wei Zhang. 2016. Accelerating Database Query Processing on OpenCL-based FPGAs (Abstract Only). In Proceedings of the 2016 ACM/SIGDA International Symposium on Field-Programmable Gate Arrays (FPGA '16). ACM, New York, NY
 
 ### Database Compression
-- Lang, Harald, Tobias Mühlbauer, Florian Funke, Peter A. Boncz, Thomas Neumann and Alfons Kemper. “Data Blocks: Hybrid OLTP and OLAP on Compressed Storage using both Vectorization and Compilation.” SIGMOD Conference (2016).  
+- Harald Lang, Tobias Mühlbauer, Florian Funke, Peter A. Boncz, Thomas Neumann and Alfons Kemper. “Data Blocks: Hybrid OLTP and OLAP on Compressed Storage using both Vectorization and Compilation.” SIGMOD Conference (2016).  
 
+## Interesting FPGA Open Projects
+- [RIFF] (https://github.com/KastnerRG/riffa)
+
+## Interesting FPGA Design Techniques
+- Jacobsen, M., Richmond, D., Hogains, M., and Kastner, R. “RIFFA 2.1: A reusable integration framework for FPGA accelerators.” ACM Transactions on Reconfigurable Technology and Systems (TRETS), September 2015.  
+
+- C. Pham-Quoc, Z. Al-Ars and K. Bertels, "Automated Hybrid Interconnect Design for FPGA Accelerators Using Data Communication Profiling," Parallel & Distributed Processing Symposium Workshops (IPDPSW), 2014 IEEE International, Phoenix, AZ, 2014, pp. 151-160.
+
+- Niu, Xinyu, Wayne Luk, and Yu Wang. "EURECA: On-chip configuration generation for effective dynamic data access." Proceedings of the 2015 ACM/SIGDA International Symposium on Field-Programmable Gate Arrays. ACM, 2015.
 

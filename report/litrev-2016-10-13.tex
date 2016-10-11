@@ -1,0 +1,14 @@
+\section{Dynamic Graph Processing}
+Problems of processing dynamic graph with its continuous updates in real-time manner
+\begin{itemize}
+\item Graph storage: Modification of graph structure is costly
+\item Fast response: Widely used global manner cannot achieve real-time processing
+\item Workload imbalance: Some vertices update more frequently and consume more computing resource in a certain period of time.
+\end{itemize}
+
+Ideas:
+\begin{itemize}
+\item Random-access graph structure: Hash-based graph partition strategy to enable fine-grained graph updates
+\item Incremental graph processing: Vertex-based incremental graph computing model
+\item Workload rebalance: Detect hotspots and evaluate their workload, and then rebalance them with greedy algorithms.
+\end{itemize}
