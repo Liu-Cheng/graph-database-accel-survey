@@ -19,7 +19,8 @@
 - [GAP] (http://gap.cs.berkeley.edu/)
 - [GPS] (http://infolab.stanford.edu/gps/)
 - [Big Graph Mining] (http://datalab.snu.ac.kr/projects/big-graph-mining)
-- [amplab: GraphX](https://amplab.cs.berkeley.edu/projects/graphx/)
+- [amplab: GraphX] (https://amplab.cs.berkeley.edu/projects/graphx/)
+
 ## Reading List
 
 ### Graph Processing
