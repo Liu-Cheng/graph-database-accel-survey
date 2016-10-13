@@ -20,10 +20,14 @@
 - [GPS] (http://infolab.stanford.edu/gps/)
 - [Big Graph Mining] (http://datalab.snu.ac.kr/projects/big-graph-mining)
 - [amplab: GraphX] (https://amplab.cs.berkeley.edu/projects/graphx/)
+- [Gunrock] (http://gunrock.github.io/gunrock/doc/latest/index.html)
+- [Ligra] (http://jshun.github.io/ligra/)
 
 ## Reading List
 
 ### Graph Processing
+- Wang, Yangzihao; Davidson, Andrew; Pan, Yuechao; Wu, Yuduo; Riffel, Andy; & Owens, John D.(2016). Gunrock: A High-Performance Graph Processing Library on the GPU. Proceedings of the 21st ACM SIGPLAN Symposium on Principles and Practice of Parallel Programming.
+
 - Nurvitadhi, Eriko, et al. "GraphGen: An FPGA framework for vertex-centric graph computation." Field-Programmable Custom Computing Machines (FCCM), 2014 IEEE 22nd Annual International Symposium on. IEEE, 2014.
 
 - Ozdal, Muhammet Mustafa, et al. "Energy efficient architecture for graph analytics accelerators." Computer Architecture (ISCA), 2016 ACM/IEEE 43rd Annual International Symposium on. IEEE, 2016.
