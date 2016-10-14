@@ -22,6 +22,7 @@
 - [amplab: GraphX] (https://amplab.cs.berkeley.edu/projects/graphx/)
 - [Gunrock] (http://gunrock.github.io/gunrock/doc/latest/index.html)
 - [Ligra] (http://jshun.github.io/ligra/)
+- [Galois] (http://iss.ices.utexas.edu/?p=projects/galois)
 
 ## Reading List
 
