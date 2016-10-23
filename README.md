@@ -83,6 +83,16 @@
 
 - Anand Padmanabha Iyer, Li Erran Li, Tathagata Das, and Ion Stoica. 2016. Time-evolving graph processing at scale. In Proceedings of the Fourth International Workshop on Graph Data Management Experiences and Systems (GRADES '16). ACM, New York, NY, USA
 
+- Julian Shun and Guy E. Blelloch. 2013. Ligra: a lightweight graph processing framework for shared memory. In Proceedings of the 18th ACM SIGPLAN symposium on Principles and practice of parallel programming (PPoPP '13). ACM, New York, NY, USA, 135-146. 
+
+- Julian Shun. An Evaluation of Parallel Eccentricity Estimation Algorithms on
+  Undirected Real-World Graphs. Proceedings of the ACM SIGKDD Conference on
+  Knowledge Discovery and Data Mining (KDD), pp. 1095-1104, 2015.
+
+- Julian Shun, Farbod Roosta-Khorasani, Kimon Fountoulakis and Michael Mahoney.
+  Parallel Local Graph Clustering. Proceedings of the International Conference
+  on Very Large Data Bases (VLDB), 2016.
+ 
 ### Graph Compression
 - Zhou, Fang. "Graph compression." Department of Computer Science and Helsinki Institute for Information Technology HIIT (2015): 1-12.
 
@@ -94,6 +104,9 @@
 
 - Vito Giovanni Castellana, Marco Minutoli, Alessandro Morari, Antonino Tumeo, Marco Lattuada, and Fabrizio Ferrandi. 2015. High Level Synthesis of RDF Queries for Graph Analytics. In Proceedings of the IEEE/ACM International Conference on Computer-Aided Design (ICCAD '15). IEEE Press, Piscataway, NJ, USA, 323-330.
 
+- Julian Shun, Laxman Dhulipala and Guy Blelloch. Smaller and Faster: Parallel Processing of Compressed Graphs with Ligra+. Proceedings of the IEEE Data Compression Conference (DCC), pp. 403-412, 2015
+
+ 
 ## Research Groups on Database Query Acceleration
 - [Xtra Computing Group] (http://pdcc.ntu.edu.sg/xtra/)
 - [amplab] (https://amplab.cs.berkeley.edu/projects/succinct-enabling-queries-on-compressed-data/)
