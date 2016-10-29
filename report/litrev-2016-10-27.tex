@@ -61,7 +61,6 @@ SSSP, they are generalized and ported to Gunrock. Thus this work is reviewed
 for more details about the graph optimization techniques. Here are the highlights of
 this SSSP optimization techniques.
 
-
 \begin{itemize}
     \item load balanced graph traversal:
         \subitem Group blocking: The edges of the vertices within a block are
@@ -79,12 +78,42 @@ this SSSP optimization techniques.
         to ensure strict load balance within a block. 
     \item Work organization which essentially decides the vertices to be
         processed in next iteration. Again three different methods are proposed.
-        \subitem xxx
-        \subitem xxx
-        \subitem xxx
-\end{itemize}
+        \subitem Workfront sweep: The basic idea of Workfront is to compute on
+        vertex frontier instead of all the vertice in Bellman-Ford. In addition,
+        with the frontier queue and a vertex id table, redundant vertice in the
+        queue are completely removed to minmize the computing work.
 
-Here is a summary of SSSP algorithms.
+        \subitem Near-Far Pile: This is used in Ligra and also known as priority
+        queue strategy in Gunrock. The basic idea is to process some of the
+        vertices in the work queue or frontier first which helps to save the
+        work of the computing. Particularly, the Near-Far method divides the
+        vertices in the work queue in two piles based on the distances to the
+        source. The distance threshold is named as delta which can be
+        customized. When the vertices in the near pile are processed, vertices
+        in the far pile will be analyzed to update the new near pile with the
+        threshold increased by anther delta. Meanwhile, duplicated vertices in
+        the far piles will be removed. 
+
+        \subitem Bucketing with far pile: This method follows the same design
+        philosophy with Near-Far pile. While delta in near-far method may impose
+        diverse number of vertices in near pile in different iterations. The
+        bucketing method selects a determined number of vertices for the near
+        pile when the number of vertices that meets the distance criteria is
+        than the predefined number (i.e. 1\/10 of the active vertices in this
+        work). The rest active vertices are considered as the far pile. In next
+        iteration, the vertices in the far pile are further selected with a
+        increased distance criteria similarly. This method will ensure the
+        number of near pile varies in a relatively small range which fits 
+        the GPU hardware. 
+\end{itemize}
+By adding priority information to the vertices in the active list, we can avoid
+updating or computing vertices associated with current vertices with long edges,
+as they will probably be updated by other paths with smaller edges and more
+hops. Essentially, this reduces the amount of computing and the overall run-time
+can be reduced as long as the GPU processing elements remain high utilization.
+
+Here is a summary of relevant SSSP algorithms in reference papers. Some of them
+are the basis of the algorithms proposed in this work.
 \begin{table}[!hbp]
     \begin{center}
     \begin{tabular}{cccc}
@@ -109,7 +138,7 @@ architectures.
 PHAST \cite{delling2013phast}: It has a Dijkstra-like preprocessing step to pre-compute distances to
 vertices of high-degree. Then the Dijkstra algorithm can start from these highly ranked
 vertices in parallel. This algorithm works well on low-degree and high-diameter
-graphs.
+graphs. (More details will be added later.)
 
 Delta Step \cite{meyer2003delta}: Instead of processing one vertex at a time in
 Dijkstra algorithm, it groups vertices in buckets and process vertices in a
@@ -132,4 +161,7 @@ This algorithm suffers load imbalance for graphs with power-law distribution.
 Race condition occurs when the update is parallelized and atomic update is
 needed.
 
+\subsection{FPGA}
+
+\subsection{NXgraph}
 
