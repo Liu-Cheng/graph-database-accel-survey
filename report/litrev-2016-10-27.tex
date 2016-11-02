@@ -161,7 +161,62 @@ This algorithm suffers load imbalance for graphs with power-law distribution.
 Race condition occurs when the update is parallelized and atomic update is
 needed.
 
-\subsection{FPGA}
-
 \subsection{NXgraph}
+NXgraph \cite{Chi2015NXgraph} is a graph processing framework on a single machine meaning that
+the original graph is stored in the disk. It follows a few general optimization
+rules that have been applied in a few different graph processing frameworks
+including GraphChi, TurboGraph, VENUS, GridGraph. 
 
+\begin{itemize}
+    \item Exploit the locality of the graph data
+    \item Utilize the multi-thread of CPU
+    \item Reduce the amount of data transfer
+    \item Stream disk IO
+\end{itemize}
+
+Here are the highlights of NXgraph centering the above four design principles.
+
+\begin{itemize}
+    \item In order to explore the locality of the graph processing, vertices of
+        the graph are divided into intervals and the edges are split in to
+        shards. In each interval, the shards are further divided into
+        sub-shards. Graph computation is performed with granularity of a
+        sub-shard. 
+
+    \item To produce the intervals and shards, the graph needs a two-step
+        pre-processing. In the first step, vertex IDs are re-assigned to produce
+        continuous vertex IDs. The continuous vertex IDs facilitate efficient
+        interval generation and pre-shard generation. In the second step, the
+        pre-shard result are further cut into pieces i.e. sub-shards. Note that
+        the edges in each sub-shards are sorted with the destination vertex
+        IDs.
+
+    \item NXgraph update strategies: The basic idea is to have two intervals of
+        vertices stored in main memory while the sub-shards are streamed from
+        disk. As the vertices are updated in each iteration and new data are
+        needed in next iteration, vertices must be synchronized. To approach the
+        synchronization cost, each interval has two copies. One copy is used for
+        read and used in current iteration and the other is updated. When the
+        iteration moves forward, the two copies swapped. Thus the
+        synchronization is reduced with the memory cost. In order to support
+        the graphs of which the vertices are large than the main memory, only vertices that
+        are computed will be loaded into main memory. And the order of the
+        sub-shard computation is carefully organized to make sure disk
+        read/write are minimized. Finally, a mixed solution combined the
+        previous strategy is proposed to balance the performance and the
+        memory overhead. 
+    \item Finally, the graph processing performance is modeled and
+        bottleneck of the graph processing system can be found from the
+        analytical models.
+\end{itemize}
+
+\subsection{FPGP}
+FPGP \cite{dai2016fpgp} is the simplified version of NXgraph implemented on FPGAs. The most
+interesting part of this work is to build specific analytical models targeting CPU-FPGA
+system. The CPU-FPGA system includes multiple FPGA chips with a big shared
+memory. Meanwhile, each FPGA board has a private DDR. This work basically has
+vertices stored on the shared memory while shards of edges stored on private
+memory. According to the experiment, the shared memory bandwidth is not a clear
+bottleneck, but the private memory bandwidth is currently the major performance
+bottleneck. Due to the memory bandwidth, the FPGP doesn't show significant
+performance speedup over the multi-core counterpart.
