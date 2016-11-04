@@ -135,6 +135,9 @@
 ## Readling List
 
 ### Database Query Acceleration
+- V. G. Castellana et al., "In-Memory Graph Databases for Web-Scale Data," in
+  Computer, vol. 48, no. 3, pp. 24-35, Mar. 2015.
+
 - Sukhwani, Bharat, et al. "A hardware/software approach for database query acceleration with fpgas." International Journal of Parallel Programming 43.6 (2015): 1129-1159.
 
 - Dennl, Christopher, Daniel Ziener, and Jurgen Teich. "On-the-fly composition of FPGA-based SQL query accelerators using a partially reconfigurable module library." Field-Programmable Custom Computing Machines (FCCM), 2012 IEEE 20th Annual International Symposium on. IEEE, 2012.
