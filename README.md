@@ -23,6 +23,7 @@
 - [Gunrock] (http://gunrock.github.io/gunrock/doc/latest/index.html)
 - [Ligra] (http://jshun.github.io/ligra/)
 - [Galois] (http://iss.ices.utexas.edu/?p=projects/galois)
+- [Trinity] (https://www.microsoft.com/en-us/research/project/trinity/)
 
 ## Reading List
 
@@ -135,8 +136,17 @@
 ## Readling List
 
 ### Database Query Acceleration
+- Kocberber, Onur, Boris Grot, Javier Picorel, Babak Falsafi, Kevin Lim, and
+  Parthasarathy Ranganathan. "Meet the walkers: Accelerating index traversals
+  for in-memory databases." In Proceedings of the 46th Annual IEEE/ACM
+      International Symposium on Microarchitecture, pp. 468-479. ACM, 2013.
+
 - V. G. Castellana et al., "In-Memory Graph Databases for Web-Scale Data," in
   Computer, vol. 48, no. 3, pp. 24-35, Mar. 2015.
+
+- Zeng, Kai, Jiacheng Yang, Haixun Wang, Bin Shao, and Zhongyuan Wang. "A
+  distributed graph engine for web scale RDF data." In Proceedings of the VLDB
+  Endowment, vol. 6, no. 4, pp. 265-276. VLDB Endowment, 2013.
 
 - Sukhwani, Bharat, et al. "A hardware/software approach for database query acceleration with fpgas." International Journal of Parallel Programming 43.6 (2015): 1129-1159.
 

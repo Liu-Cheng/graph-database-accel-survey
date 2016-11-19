@@ -1,0 +1,198 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Beamer Presentation
+% LaTeX Template
+% Version 1.0 (10/11/12)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND THEMES
+%----------------------------------------------------------------------------------------
+
+\documentclass{beamer}
+
+\mode<presentation> {
+
+% The Beamer class comes with a number of default slide themes
+% which change the colors and layouts of slides. Below this is a list
+% of all the themes, uncomment each in turn to see what they look like.
+
+%\usetheme{default}
+%\usetheme{AnnArbor}
+%\usetheme{Antibes}
+%\usetheme{Bergen}
+\usetheme{Berkeley}
+%\usetheme{Berlin}
+%\usetheme{Boadilla}
+%\usetheme{CambridgeUS}
+%\usetheme{Copenhagen}
+%\usetheme{Darmstadt}
+%\usetheme{Dresden}
+%\usetheme{Frankfurt}
+%\usetheme{Goettingen}
+%\usetheme{Hannover}
+%\usetheme{Ilmenau}
+%\usetheme{JuanLesPins}
+%\usetheme{Luebeck}
+%\usetheme{Madrid}
+%\usetheme{Malmoe}
+%\usetheme{Marburg}
+%\usetheme{Montpellier}
+%\usetheme{PaloAlto}
+%\usetheme{Pittsburgh}
+%\usetheme{Rochester}
+%\usetheme{Singapore}
+%\usetheme{Szeged}
+%\usetheme{Warsaw}
+
+% As well as themes, the Beamer class has a number of color themes
+% for any slide theme. Uncomment each of these in turn to see how it
+% changes the colors of your current slide theme.
+
+%\usecolortheme{albatross}
+%\usecolortheme{beaver}
+%\usecolortheme{beetle}
+%\usecolortheme{crane}
+%\usecolortheme{dolphin}
+%\usecolortheme{dove}
+%\usecolortheme{fly}
+%\usecolortheme{lily}
+%\usecolortheme{orchid}
+%\usecolortheme{rose}
+%\usecolortheme{seagull}
+%\usecolortheme{seahorse}
+%\usecolortheme{whale}
+%\usecolortheme{wolverine}
+
+%\setbeamertemplate{footline} % To remove the footer line in all slides uncomment this line
+%\setbeamertemplate{footline}[page number] % To replace the footer line in all slides with a simple slide count uncomment this line
+
+%\setbeamertemplate{navigation symbols}{} % To remove the navigation symbols from the bottom of all slides uncomment this line
+}
+\usepackage{setspace}
+\usepackage{graphicx} % Allows including images
+\usepackage{booktabs} % Allows the use of \toprule, \midrule and \bottomrule in tables
+\setbeamertemplate{caption}[numbered]
+%----------------------------------------------------------------------------------------
+%	TITLE PAGE
+%----------------------------------------------------------------------------------------
+
+\title[]{Graph Acceleator Review} 
+\author[]{
+    Cheng Liu 
+}
+\institute {
+\medskip
+}
+\date{\today} % Date, can be changed to a custom date
+
+\graphicspath{{./figures/}} 
+\begin{document}
+
+\begin{frame}
+\titlepage % Print the title page as the first slide
+\end{frame}
+
+%----------------------------------------------------------------------------------------
+%	PRESENTATION SLIDES
+%----------------------------------------------------------------------------------------
+
+%------------------------------------------------
+\section{Vertex-Centric Parallel Graph Processing} 
+%------------------------------------------------
+\begin{frame}[t]
+\frametitle{Basic Vertex Processing Framework}
+    Here is the basic vertex-centric processing flow.
+    \begin{itemize}
+        \item Initialize Active Vertex List
+        \item For each active vertex, get associated Edge List
+        \item For each edge in the Edge List, update associated vertices
+        \item Update Active Vertex List
+    \end{itemize}
+    Iteratively perform the vertex processing with BSP model until the computing converges. 
+    Graph operation abstraction in different graph frameworks: Advance-Compute-filter,
+    Gather-Scatter-Apply, EdgeMap-VertexMap, ProcessEdge-Reduce-Apply ...
+\end{frame}
+
+%------------------------------------------------
+\section{Typical Parallelization Methods}
+%------------------------------------------------
+\begin{frame}[t]
+    \frametitle{General Graph Optimization Rules}
+    \begin{itemize}
+        \item Exploit locality of the graph data
+        \item Reduce amount of data tranfer or computing
+        \item Explore more parallelism 
+        \item Explore load balancing strategies
+    \end{itemize}
+\end{frame}
+
+\begin{frame}[t]
+    \frametitle{Graph Partition}
+    The graph are divided into sub-graphs based on various strategies.
+    \begin{itemize}
+        \item \textbf{Graph slicing:} Graph IDs are used in
+            \cite{hamgra2016graphicionado} to divide the vertices and edges into
+            different groups. Dependent vertices are replicated. 
+        \item \textbf{Interval and Shard:} Graph IDs are reordered and equally
+            divided as intervals. Based on the vertex intervals, the edges are
+            further split into shards. Basically the graph are divided in two
+            dimensions \cite{dai2016fpgp, Chi2015NXgraph}. Note that it needs
+            pre-processing. 
+    \end{itemize}
+\end{frame}
+
+\begin{frame}[t]
+    \frametitle{Vertex Related Optimization Techniques}
+    The optimization techniques concentrates on the vertices in the active
+    vertex list. The basic idea is to divide the vertices in the list into
+    groups with different priority and process them separately. This helps on
+    both balance the load on parallel computing architectures and reduce the
+    computing work in some of the applications. 
+    \begin{itemize}
+        \item Bottom-up (push) and Top-down (pull) Vertex Traversal \cite{wang2016gunrock, Shun2013ligra} 
+        \item Remove Redundant Vertices in Vertex Active List \cite{wang2016gunrock}
+        \item Priority Queue for Active Vertex List \cite{Shun2013ligra}
+        \item Near-Far pile, delta bucketing \cite{wang2016gunrock, meyer2003delta}  
+    \end{itemize}
+\end{frame}
+
+\begin{frame}[t]
+    \frametitle{Edge Related Optimization Techniques}
+    The edge optimization techniques mostly aim to achieve load balancing on the
+    parallel architectures. 
+    \begin{itemize}
+        \item Naive vertex based allocation
+        \item Group Blocking
+        \item CTA (Cooperative Thread Array) + WARP \cite{wang2016gunrock, merrill2012scalable}
+        \item Equally edge partition \cite{wang2016gunrock}
+    \end{itemize}
+\end{frame}
+
+\begin{frame}[t]
+    \frametitle{Memory Access Optimization}
+    \begin{itemize}
+        \item \textbf{Double-Buffer:} Iteratively swap vertex buffers of
+            vertex data in current iteration and next iteration.
+        \item \textbf{eDRAM:} For random edge or vertex access, a large eDRAM
+            can be used as a on-chip scratchpad memory \cite{hamgra2016graphicionado}. 
+        \item \textbf{Pre-Fetch:} When all the edges or vertices are to be
+            accessed, sequentially accessing all the data with pre-fetching can
+            hide memory access latency completely \cite{hamgra2016graphicionado}.
+    \end{itemize}
+\end{frame}
+
+\section{Reference}
+\begin{frame}[t]
+    \frametitle{Reference}
+    \tiny
+    \bibliographystyle{abbrv}
+    \bibliography{refs}
+\end{frame}
+\end{document} 

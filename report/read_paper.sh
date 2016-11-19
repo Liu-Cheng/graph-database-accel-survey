@@ -1,6 +1,6 @@
 #! /bin/bash
 echo "Add a new paper."
-report_date="2016-10-27"
+report_date="2016-11-17"
 
 #Update report tex file
 cp -f report-template.tex report.tex
