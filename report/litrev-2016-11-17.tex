@@ -40,3 +40,38 @@ There are few design options that may be further optimized.
         the size of the keys will be limited when fitting the multiple parallel
         keys in the same cache line.
 \end{itemize}
+
+\section{Fast and Concurrent RDF Queries}
+This work \cite{shi2016fast} presented a distributed graph-based RDF queries.
+It follows a graph-based design by storing RDF triples as a native graph and
+leverages graph exploration to handle queries. Unlike previous work, it
+processes concurrent queries instead a single one. Basically, the clients issues
+SPARQL queries and then be parsed to sub procedures. The servers includes two
+layers. The query layer handles sub procedures from the clinets and the graph
+layer holds a partitioned subgraph of the RDF using RMA technique. To provide
+better performance, it uses fast network primitives like one-side RDMA as much
+as possible. A few detailed highlights are listed below.
+
+\textbf{Graph Based Modeling:}
+\begin{itemize}
+    \item \textbf{Graph partition:} This work adopts differentiated
+        partition algorithms. It introduces
+        index vertices on top of normal RDF, which helps to partition the graph
+        and expose the parallelism as proposed in \cite{chen2015powerlyra}.
+        The predicate index will not be included in the
+        edge list of normal vertex, which saves the memory space.
+
+    \item \textbf{Full history pruning:} In addition, it also develops a
+        strategy to prune the intermediate result and avoid the final costly
+        aggregation.   
+
+\end{itemize}
+
+\textbf{Query Processing:}
+\begin{itemize}
+    \item \textbf{Fast and scalable query processing:} It divides a query in
+        to many small sub-queries and processes the independent sub-queries in
+        parallel. It also utilizes the one-side RDMA primitives to efficiently
+        distribute the queries.
+
+\end{itemize}

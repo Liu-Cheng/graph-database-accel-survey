@@ -28,11 +28,41 @@
 ## Reading List
 
 ### Graph Processing
+The graph processing algorithms and frameworks are roughly classified depending
+on the target computing platforms including many-core processors, distributed
+systems, GPUs, ASIC based Accelerators and FPGAs.
+
+#### Graph Processing on GPUs
+
+- Fu, Zhisong, Michael Personick, and Bryan Thompson. "Mapgraph: A high level API for fast development of high performance graph analytics on GPUs." In Proceedings of Workshop on GRAph Data management Experiences and Systems pp. 1-6. ACM, 2014
+
 - Andrew Davidson, Sean Baxter, Michael Garland, and John D. Owens. 2014.
   Work-Efficient Parallel GPU Methods for Single-Source Shortest Paths. In
   Proceedings of the 2014 IEEE 28th International Parallel and Distributed
   Processing Symposium (IPDPS '14). IEEE Computer Society, Washington, DC, USA,
   349-359. 
+
+- Merrill, Duane, Michael Garland, and Andrew Grimshaw. "Scalable GPU graph traversal." ACM SIGPLAN Notices. Vol. 47. No. 8. ACM, 2012.
+
+- Singh D P, Khare N. Modified Dijkstra’s Algorithm for Dense Graphs on GPU
+  using CUDA[J]. Indian Journal of Science and Technology, 2016, 9(33).
+
+- Wang, Yangzihao; Davidson, Andrew; Pan, Yuechao; Wu, Yuduo; Riffel, Andy; & Owens, John D.(2016). Gunrock: A High-Performance Graph Processing Library on the GPU. Proceedings of the 21st ACM SIGPLAN Symposium on Principles and Practice of Parallel Programming.
+
+
+#### Graph Processing on CPUs
+#### Graph Processing on Distributed Systems
+#### Graph Processing on FPGAs
+
+- Nurvitadhi, Eriko, et al. "GraphGen: An FPGA framework for vertex-centric graph computation." Field-Programmable Custom Computing Machines (FCCM), 2014 IEEE 22nd Annual International Symposium on. IEEE, 2014.
+
+
+#### Graph Processing on ASICs
+
+- Ham, Tae Jun, et al. "Graphicionado: A High-Performance and Energy-Efficient Accelerator for Graph Analytics."
+
+- Ozdal, Muhammet Mustafa, et al. "Energy efficient architecture for graph analytics accelerators." Computer Architecture (ISCA), 2016 ACM/IEEE 43rd Annual International Symposium on. IEEE, 2016.
+
 
 - Delling, Daniel, et al. "Phast: Hardware-accelerated shortest path trees."
   Journal of Parallel and Distributed Computing 73.7 (2013): 940-952.
@@ -40,22 +70,10 @@
 - Meyer, Ulrich, and Peter Sanders. "Δ-stepping: a parallelizable shortest path
   algorithm." Journal of Algorithms 49.1 (2003): 114-152.
 
-- Merrill, Duane, Michael Garland, and Andrew Grimshaw. "Scalable GPU graph traversal." ACM SIGPLAN Notices. Vol. 47. No. 8. ACM, 2012.
-
 - Singh DP, Khare N, Rasool A. Efficient Parallel Implementation of Single
   Source Shortest Path Algorithm on GPU Using CUDA. International Journal of
   Applied Engineering Research. 2016; 11(4):2560–7.
 
-- Singh D P, Khare N. Modified Dijkstra’s Algorithm for Dense Graphs on GPU
-  using CUDA[J]. Indian Journal of Science and Technology, 2016, 9(33).
-
-- Wang, Yangzihao; Davidson, Andrew; Pan, Yuechao; Wu, Yuduo; Riffel, Andy; & Owens, John D.(2016). Gunrock: A High-Performance Graph Processing Library on the GPU. Proceedings of the 21st ACM SIGPLAN Symposium on Principles and Practice of Parallel Programming.
-
-- Nurvitadhi, Eriko, et al. "GraphGen: An FPGA framework for vertex-centric graph computation." Field-Programmable Custom Computing Machines (FCCM), 2014 IEEE 22nd Annual International Symposium on. IEEE, 2014.
-
-- Ozdal, Muhammet Mustafa, et al. "Energy efficient architecture for graph analytics accelerators." Computer Architecture (ISCA), 2016 ACM/IEEE 43rd Annual International Symposium on. IEEE, 2016.
-
-- Ham, Tae Jun, et al. "Graphicionado: A High-Performance and Energy-Efficient Accelerator for Graph Analytics."
 
 - Sundaram, Narayanan, et al. "GraphMat: High performance graph analytics made productive." Proceedings of the VLDB Endowment 8.11 (2015): 1214-1225.
 
@@ -114,7 +132,13 @@
 - Julian Shun, Farbod Roosta-Khorasani, Kimon Fountoulakis and Michael Mahoney.
   Parallel Local Graph Clustering. Proceedings of the International Conference
   on Very Large Data Bases (VLDB), 2016.
- 
+
+### Graph Partition
+- Chen, Rong, Jiaxin Shi, Yanzhe Chen, and Haibo Chen. "Powerlyra:
+  Differentiated graph computation and partitioning on skewed graphs." In
+  Proceedings of the Tenth European Conference on Computer Systems, p. 1. ACM,
+  2015.
+
 ### Graph Compression
 - Zhou, Fang. "Graph compression." Department of Computer Science and Helsinki Institute for Information Technology HIIT (2015): 1-12.
 
@@ -195,3 +219,7 @@
 
 - Niu, Xinyu, Wayne Luk, and Yu Wang. "EURECA: On-chip configuration generation for effective dynamic data access." Proceedings of the 2015 ACM/SIGDA International Symposium on Field-Programmable Gate Arrays. ACM, 2015.
 
+- Dorrance, Richard, Fengbo Ren, and Dejan Marković. "A scalable sparse
+  matrix-vector multiplication kernel for energy-efficient sparse-blas on
+  FPGAs." In Proceedings of the 2014 ACM/SIGDA international symposium on
+  Field-programmable gate arrays, pp. 161-170. ACM, 2014. 
