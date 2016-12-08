@@ -5,4 +5,10 @@ the frontier as the metric, MapGraph can choose either a dynamic scheduling
 based balancing or a two-step balancing strategy.
 
 \section{Energy Efficient Scalable SpMV on FPGAs}
-This work 
+This work \cite{dorrance2014scalable} developed a sparse matrix-vector multiplication computing engine. It
+can make good use of the CSC compression format of the sparse data and allows
+stream processing of the input data. The basic idea is rather simple. Instead of
+performing the vector dot production for the matrix-vector computing, it take
+the computing as a weighted vector addition. This is particularly beneficial
+because of the sequential memory access. According to the experiments on ROACH,
+the design exhibits great performance speedup with higher bandwidth though.

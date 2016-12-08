@@ -1,4 +1,0 @@
-\beamer@endinputifotherversion {3.36pt}
-\beamer@sectionintoc {1}{Vertex-Centric Parallel Graph Processing}{2}{0}{1}
-\beamer@sectionintoc {2}{Typical Parallelization Methods}{3}{0}{2}
-\beamer@sectionintoc {3}{Reference}{8}{0}{3}

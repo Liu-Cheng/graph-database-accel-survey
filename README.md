@@ -28,9 +28,14 @@
 ## Reading List
 
 ### Graph Processing
-The graph processing algorithms and frameworks are roughly classified depending
-on the target computing platforms including many-core processors, distributed
-systems, GPUs, ASIC based Accelerators and FPGAs.
+The graph processing algorithms and frameworks are roughly classified based on the target computing platforms including many-core processors, distributed systems, GPUs, ASIC based Accelerators and FPGAs.
+
+#### Survey
+
+- McCune, Robert Ryan, Tim Weninger, and Greg Madey. "Thinking like a vertex: a survey of vertex-centric frameworks for large-scale distributed graph processing." ACM Computing Surveys (CSUR) 48.2 (2015): 25.
+
+- Doekemeijer, Niels, and Ana Lucia Varbanescu. "A survey of parallel graph processing frameworks." Delft University of Technology (2014).
+
 
 #### Graph Processing on GPUs
 
@@ -49,12 +54,63 @@ systems, GPUs, ASIC based Accelerators and FPGAs.
 
 - Wang, Yangzihao; Davidson, Andrew; Pan, Yuechao; Wu, Yuduo; Riffel, Andy; & Owens, John D.(2016). Gunrock: A High-Performance Graph Processing Library on the GPU. Proceedings of the 21st ACM SIGPLAN Symposium on Principles and Practice of Parallel Programming.
 
+- Singh DP, Khare N, Rasool A. Efficient Parallel Implementation of Single
+  Source Shortest Path Algorithm on GPU Using CUDA. International Journal of
+  Applied Engineering Research. 2016; 11(4):2560–7.
+
+- Bingsheng He, Jianlong Zhong, "Medusa: Simplified Graph Processing on GPUs", IEEE Transactions on Parallel & Distributed Systems
+
 
 #### Graph Processing on CPUs
+- Sundaram, Narayanan, et al. "GraphMat: High performance graph analytics made productive." Proceedings of the VLDB Endowment 8.11 (2015): 1214-1225.
+
+- Julian Shun. An Evaluation of Parallel Eccentricity Estimation Algorithms on
+  Undirected Real-World Graphs. Proceedings of the ACM SIGKDD Conference on
+  Knowledge Discovery and Data Mining (KDD), pp. 1095-1104, 2015.
+
+- Delling, Daniel, et al. "Phast: Hardware-accelerated shortest path trees."
+  Journal of Parallel and Distributed Computing 73.7 (2013): 940-952.
+
+- Meyer, Ulrich, and Peter Sanders. "Δ-stepping: a parallelizable shortest path
+  algorithm." Journal of Algorithms 49.1 (2003): 114-152.
+
+- Kyrola, Aapo, Guy Blelloch, and Carlos Guestrin. "GraphChi: large-scale graph computation on just a PC." Presented as part of the 10th USENIX Symposium on Operating Systems Design and Implementation (OSDI 12). 2012.
+
+- Julian Shun and Guy E. Blelloch. 2013. Ligra: a lightweight graph processing framework for shared memory. In Proceedings of the 18th ACM SIGPLAN symposium on Principles and practice of parallel programming (PPoPP '13). ACM, New York, NY, USA, 135-146. 
+
+- Yuze Chi, Guohao Dai, Yu Wang, Guangyu Sun, Guoliang Li, Huazhong Yang, "NXgraph: An Efficient Graph Processing System on a Single Machine", CoRR, 2015
+
+
 #### Graph Processing on Distributed Systems
+
+- Gonzalez, Joseph E., et al. "Graphx: Graph processing in a distributed dataflow framework." 11th USENIX Symposium on Operating Systems Design and Implementation (OSDI 14). 2014.
+
+- Salihoglu, Semih, and Jennifer Widom. "GPS: a graph processing system." Proceedings of the 25th International Conference on Scientific and Statistical Database Management. ACM, 2013.
+
+- Malewicz, Grzegorz, et al. "Pregel: a system for large-scale graph processing." Proceedings of the 2010 ACM SIGMOD International Conference on Management of data. ACM, 2010.
+
+- Anand Padmanabha Iyer, Li Erran Li, Tathagata Das, and Ion Stoica. 2016. Time-evolving graph processing at scale. In Proceedings of the Fourth International Workshop on Graph Data Management Experiences and Systems (GRADES '16). ACM, New York, NY, USA
+
+- Steinbauer, Matthias, and Gabriele Anderst-Kotsis. "DynamoGraph: extending the Pregel paradigm for large-scale temporal graph processing." International Journal of Grid and Utility Computing 7.2 (2016): 141-151.
+
+- Steinbauer, Matthias, and Gabriele Anderst-Kotsis. "DynamoGraph: A Distributed System for Large-scale, Temporal Graph Processing, its Implementation and First Observations." Proceedings of the 25th International Conference Companion on World Wide Web. International World Wide Web Conferences Steering Committee, 2016.
+
+- Khayyat, Zuhair, et al. "Mizan: a system for dynamic load balancing in large-scale graph processing." Proceedings of the 8th ACM European Conference on Computer Systems. ACM, 2013.
+
+- Sengupta, Dipanjan, et al. "Graphin: An online high performance incremental graph processing framework." European Conference on Parallel Processing. Springer International Publishing, 2016.
+
+- Sabeur Aridhi, Alberto Montresor, and Yannis Velegrakis. 2016. BLADYG: A Novel Block-Centric Framework for the Analysis of Large Dynamic Graphs. In Proceedings of the ACM Workshop on High Performance Graph Processing (HPGP '16). ACM, New York, NY, USA
+
+
 #### Graph Processing on FPGAs
 
 - Nurvitadhi, Eriko, et al. "GraphGen: An FPGA framework for vertex-centric graph computation." Field-Programmable Custom Computing Machines (FCCM), 2014 IEEE 22nd Annual International Symposium on. IEEE, 2014.
+
+- U. Bondhugula, A. Devulapalli, J. Fernando, P. Wyckoff and P. Sadayappan, "Parallel FPGA-based all-pairs shortest-paths in a directed graph," Proceedings 20th IEEE International Parallel & Distributed Processing Symposium, 2006
+
+- Guohao Dai, Yuze Chi, Yu Wang, and Huazhong Yang. 2016. FPGP: Graph Processing Framework on FPGA A Case Study of Breadth-First Search. In Proceedings of the 2016 ACM/SIGDA International Symposium on Field-Programmable Gate Arrays 
+
+- N. Engelhardt and H. K. H. So, "GraVF: A vertex-centric distributed graph processing framework on FPGAs," 2016 26th International Conference on Field Programmable Logic and Applications (FPL), Lausanne, Switzerland, 2016, pp. 1-4.
 
 
 #### Graph Processing on ASICs
@@ -63,81 +119,24 @@ systems, GPUs, ASIC based Accelerators and FPGAs.
 
 - Ozdal, Muhammet Mustafa, et al. "Energy efficient architecture for graph analytics accelerators." Computer Architecture (ISCA), 2016 ACM/IEEE 43rd Annual International Symposium on. IEEE, 2016.
 
-
-- Delling, Daniel, et al. "Phast: Hardware-accelerated shortest path trees."
-  Journal of Parallel and Distributed Computing 73.7 (2013): 940-952.
-
-- Meyer, Ulrich, and Peter Sanders. "Δ-stepping: a parallelizable shortest path
-  algorithm." Journal of Algorithms 49.1 (2003): 114-152.
-
-- Singh DP, Khare N, Rasool A. Efficient Parallel Implementation of Single
-  Source Shortest Path Algorithm on GPU Using CUDA. International Journal of
-  Applied Engineering Research. 2016; 11(4):2560–7.
-
-
-- Sundaram, Narayanan, et al. "GraphMat: High performance graph analytics made productive." Proceedings of the VLDB Endowment 8.11 (2015): 1214-1225.
-
-- Vaquero, Luis, et al. "xDGP: A dynamic graph processing system with adaptive partitioning." arXiv preprint arXiv:1309.1049 (2013).
-
-- McCune, Robert Ryan, Tim Weninger, and Greg Madey. "Thinking like a vertex: a survey of vertex-centric frameworks for large-scale distributed graph processing." ACM Computing Surveys (CSUR) 48.2 (2015): 25.
-
-- Gonzalez, Joseph E., et al. "Graphx: Graph processing in a distributed dataflow framework." 11th USENIX Symposium on Operating Systems Design and Implementation (OSDI 14). 2014.
-
-- Salihoglu, Semih, and Jennifer Widom. "GPS: a graph processing system." Proceedings of the 25th International Conference on Scientific and Statistical Database Management. ACM, 2013.
-
-- Malewicz, Grzegorz, et al. "Pregel: a system for large-scale graph processing." Proceedings of the 2010 ACM SIGMOD International Conference on Management of data. ACM, 2010.
-
-- Kyrola, Aapo, Guy Blelloch, and Carlos Guestrin. "GraphChi: large-scale graph computation on just a PC." Presented as part of the 10th USENIX Symposium on Operating Systems Design and Implementation (OSDI 12). 2012.
-
-- U. Bondhugula, A. Devulapalli, J. Fernando, P. Wyckoff and P. Sadayappan, "Parallel FPGA-based all-pairs shortest-paths in a directed graph," Proceedings 20th IEEE International Parallel & Distributed Processing Symposium, 2006
-
-- A. Abdolrashidi and L. Ramaswamy, "Continual and Cost-Effective Partitioning of Dynamic Graphs for Optimizing Big Graph Processing Systems," 2016 IEEE International Congress on Big Data (BigData Congress), San Francisco, CA, USA, 2016
-
-- Guohao Dai, Yuze Chi, Yu Wang, and Huazhong Yang. 2016. FPGP: Graph Processing Framework on FPGA A Case Study of Breadth-First Search. In Proceedings of the 2016 ACM/SIGDA International Symposium on Field-Programmable Gate Arrays 
-
-- M. Sadoghi, R. Javed, N. Tarafdar, H. Singh, R. Palaniappan and H. A. Jacobsen, "Multi-query Stream Processing on FPGAs," 2012 IEEE 28th International Conference on Data Engineering, Washington, DC, 2012, pp. 1229-1232.
-
-- N. Engelhardt and H. K. H. So, "GraVF: A vertex-centric distributed graph processing framework on FPGAs," 2016 26th International Conference on Field Programmable Logic and Applications (FPL), Lausanne, Switzerland, 2016, pp. 1-4.
-
-- Bingsheng He, Jianlong Zhong, "Medusa: Simplified Graph Processing on GPUs", IEEE Transactions on Parallel & Distributed Systems
-
-- Andreas Beckmann, Ulrich Meyer and David, Veith, "An Implementation of I/O-Efficient Dynamic Breadth-First Search Using Level-Aligned Hierarchical Clustering", 21st Annual European Symposium of Algorithms (ESA), 2013. 
-
-- Sabeur Aridhi, Alberto Montresor, and Yannis Velegrakis. 2016. BLADYG: A Novel Block-Centric Framework for the Analysis of Large Dynamic Graphs. In Proceedings of the ACM Workshop on High Performance Graph Processing (HPGP '16). ACM, New York, NY, USA
-
-- Yuze Chi, Guohao Dai, Yu Wang, Guangyu Sun, Guoliang Li, Huazhong Yang, "NXgraph: An Efficient Graph Processing System on a Single Machine", CoRR, 2015
-
 - Junwhan Ahn, Sungpack Hong, Sungjoo Yoo, Onur Mutlu, and Kiyoung Choi. 2015. A scalable processing-in-memory accelerator for parallel graph processing. In Proceedings of the 42nd Annual International Symposium on Computer Architecture (ISCA '15). ACM, New York, NY, USA, 105-117.
 
-- Sengupta, Dipanjan, et al. "Graphin: An online high performance incremental graph processing framework." European Conference on Parallel Processing. Springer International Publishing, 2016.
+### Graph Partition and Clustering
+- Chen, Rong, Jiaxin Shi, Yanzhe Chen, and Haibo Chen. "Powerlyra:
+  Differentiated graph computation and partitioning on skewed graphs." In
+  Proceedings of the Tenth European Conference on Computer Systems, p. 1. ACM,
+  2015.
 
-- Xirogiannopoulos, Konstantinos, Udayan Khurana, and Amol Deshpande. "GraphGen: exploring interesting graphs in relational data." Proceedings of the VLDB Endowment 8.12 (2015): 2032-2035.
-
-- Khayyat, Zuhair, et al. "Mizan: a system for dynamic load balancing in large-scale graph processing." Proceedings of the 8th ACM European Conference on Computer Systems. ACM, 2013.
-
-- Doekemeijer, Niels, and Ana Lucia Varbanescu. "A survey of parallel graph processing frameworks." Delft University of Technology (2014).
-
-- Steinbauer, Matthias, and Gabriele Anderst-Kotsis. "DynamoGraph: A Distributed System for Large-scale, Temporal Graph Processing, its Implementation and First Observations." Proceedings of the 25th International Conference Companion on World Wide Web. International World Wide Web Conferences Steering Committee, 2016.
-
-- Steinbauer, Matthias, and Gabriele Anderst-Kotsis. "DynamoGraph: extending the Pregel paradigm for large-scale temporal graph processing." International Journal of Grid and Utility Computing 7.2 (2016): 141-151.
-
-- Anand Padmanabha Iyer, Li Erran Li, Tathagata Das, and Ion Stoica. 2016. Time-evolving graph processing at scale. In Proceedings of the Fourth International Workshop on Graph Data Management Experiences and Systems (GRADES '16). ACM, New York, NY, USA
-
-- Julian Shun and Guy E. Blelloch. 2013. Ligra: a lightweight graph processing framework for shared memory. In Proceedings of the 18th ACM SIGPLAN symposium on Principles and practice of parallel programming (PPoPP '13). ACM, New York, NY, USA, 135-146. 
-
-- Julian Shun. An Evaluation of Parallel Eccentricity Estimation Algorithms on
-  Undirected Real-World Graphs. Proceedings of the ACM SIGKDD Conference on
-  Knowledge Discovery and Data Mining (KDD), pp. 1095-1104, 2015.
+- Vaquero, Luis, et al. "xDGP: A dynamic graph processing system with adaptive partitioning." arXiv preprint arXiv:1309.1049 (2013).
 
 - Julian Shun, Farbod Roosta-Khorasani, Kimon Fountoulakis and Michael Mahoney.
   Parallel Local Graph Clustering. Proceedings of the International Conference
   on Very Large Data Bases (VLDB), 2016.
 
-### Graph Partition
-- Chen, Rong, Jiaxin Shi, Yanzhe Chen, and Haibo Chen. "Powerlyra:
-  Differentiated graph computation and partitioning on skewed graphs." In
-  Proceedings of the Tenth European Conference on Computer Systems, p. 1. ACM,
-  2015.
+- A. Abdolrashidi and L. Ramaswamy, "Continual and Cost-Effective Partitioning of Dynamic Graphs for Optimizing Big Graph Processing Systems," 2016 IEEE International Congress on Big Data (BigData Congress), San Francisco, CA, USA, 2016
+
+- Andreas Beckmann, Ulrich Meyer and David, Veith, "An Implementation of I/O-Efficient Dynamic Breadth-First Search Using Level-Aligned Hierarchical Clustering", 21st Annual European Symposium of Algorithms (ESA), 2013. 
+
 
 ### Graph Compression
 - Zhou, Fang. "Graph compression." Department of Computer Science and Helsinki Institute for Information Technology HIIT (2015): 1-12.
@@ -152,7 +151,16 @@ systems, GPUs, ASIC based Accelerators and FPGAs.
 
 - Julian Shun, Laxman Dhulipala and Guy Blelloch. Smaller and Faster: Parallel Processing of Compressed Graphs with Ligra+. Proceedings of the IEEE Data Compression Conference (DCC), pp. 403-412, 2015
 
+## Graph Database
+
+- Shi, Jiaxin, Youyang Yao, Rong Chen, Haibo Chen, and Feifei Li. "Fast and
+  concurrent rdf queries with rdma-based distributed graph exploration." In 12th
+  USENIX Symposium on Operating Systems Design and Implementation (OSDI
+  16)(Savannah, GA. 2016.
  
+- Xirogiannopoulos, Konstantinos, Udayan Khurana, and Amol Deshpande. "GraphGen: exploring interesting graphs in relational data." Proceedings of the VLDB Endowment 8.12 (2015): 2032-2035.
+
+
 ## Research Groups on Database Query Acceleration
 - [Xtra Computing Group] (http://pdcc.ntu.edu.sg/xtra/)
 - [amplab] (https://amplab.cs.berkeley.edu/projects/succinct-enabling-queries-on-compressed-data/)
@@ -160,6 +168,9 @@ systems, GPUs, ASIC based Accelerators and FPGAs.
 ## Readling List
 
 ### Database Query Acceleration
+
+- M. Sadoghi, R. Javed, N. Tarafdar, H. Singh, R. Palaniappan and H. A. Jacobsen, "Multi-query Stream Processing on FPGAs," 2012 IEEE 28th International Conference on Data Engineering, Washington, DC, 2012, pp. 1229-1232.
+
 - Kocberber, Onur, Boris Grot, Javier Picorel, Babak Falsafi, Kevin Lim, and
   Parthasarathy Ranganathan. "Meet the walkers: Accelerating index traversals
   for in-memory databases." In Proceedings of the 46th Annual IEEE/ACM
@@ -212,14 +223,18 @@ systems, GPUs, ASIC based Accelerators and FPGAs.
 ## Interesting FPGA Open Projects
 - [RIFF] (https://github.com/KastnerRG/riffa)
 
-## Interesting FPGA Design Techniques
+## FPGA Design Techniques 
+
+### FPGA Design Tools and Frameworks
 - Jacobsen, M., Richmond, D., Hogains, M., and Kastner, R. “RIFFA 2.1: A reusable integration framework for FPGA accelerators.” ACM Transactions on Reconfigurable Technology and Systems (TRETS), September 2015.  
 
 - C. Pham-Quoc, Z. Al-Ars and K. Bertels, "Automated Hybrid Interconnect Design for FPGA Accelerators Using Data Communication Profiling," Parallel & Distributed Processing Symposium Workshops (IPDPSW), 2014 IEEE International, Phoenix, AZ, 2014, pp. 151-160.
 
 - Niu, Xinyu, Wayne Luk, and Yu Wang. "EURECA: On-chip configuration generation for effective dynamic data access." Proceedings of the 2015 ACM/SIGDA International Symposium on Field-Programmable Gate Arrays. ACM, 2015.
 
+### Sparse Matrix Computing Acceleration on FPGAs
 - Dorrance, Richard, Fengbo Ren, and Dejan Marković. "A scalable sparse
   matrix-vector multiplication kernel for energy-efficient sparse-blas on
   FPGAs." In Proceedings of the 2014 ACM/SIGDA international symposium on
   Field-programmable gate arrays, pp. 161-170. ACM, 2014. 
+
