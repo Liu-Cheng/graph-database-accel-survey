@@ -40,6 +40,10 @@ The graph processing algorithms and frameworks are roughly classified based on t
 
 
 #### Graph Processing on GPUs
+- Farzad Khorasani, Keval Vora, Rajiv Gupta, and Laxmi N. Bhuyan. 2014. CuSha:
+  vertex-centric graph processing on GPUs. In Proceedings of the 23rd
+  international symposium on High-performance parallel and distributed computing
+  (HPDC '14). ACM, New York, NY, USA, 239-252. 
 
 - Fu, Zhisong, Michael Personick, and Bryan Thompson. "Mapgraph: A high level API for fast development of high performance graph analytics on GPUs." In Proceedings of Workshop on GRAph Data management Experiences and Systems pp. 1-6. ACM, 2014
 
