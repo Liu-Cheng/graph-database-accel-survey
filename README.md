@@ -30,7 +30,7 @@
 ## Reading List
 
 ### Graph Processing
-The graph processing algorithms and frameworks are roughly classified based on the target computing platforms including many-core processors, distributed systems, GPUs, ASIC based Accelerators and FPGAs.
+The graph processing algorithms and frameworks are roughly classified based on the target computing platforms including many-core processors, distributed systems, GPUs, ASIC based Accelerators and FPGAs. Instead of targeting the graph processing framework, some of the work may particularly focus on one aspect of the graph processing such as graph compression, pre-processing, partition and load balancing. These work will be put in corresponding subsections as well. 
 
 #### Survey
 
@@ -143,6 +143,19 @@ The graph processing algorithms and frameworks are roughly classified based on t
 
 - Andreas Beckmann, Ulrich Meyer and David, Veith, "An Implementation of I/O-Efficient Dynamic Breadth-First Search Using Level-Aligned Hierarchical Clustering", 21st Annual European Symposium of Algorithms (ESA), 2013. 
 
+### Graph Pre-processing
+
+- Wu, Bo, Zhijia Zhao, Eddy Zheng Zhang, Yunlian Jiang, and Xipeng Shen.
+  "Complexity analysis and algorithm design for reorganizing data to minimize
+  non-coalesced memory accesses on GPU." In ACM SIGPLAN Notices, vol. 48, no. 8,
+  pp. 57-68. ACM, 2013.
+
+- Khorasani, Farzad, Keval Vora, Rajiv Gupta, and Laxmi N. Bhuyan. "CuSha:
+  vertex-centric graph processing on GPUs." In Proceedings of the 23rd
+  international symposium on High-performance parallel and distributed
+  computing, pp. 239-252. ACM, 2014.
+
+### Load balancing
 
 ### Graph Compression
 - Zhou, Fang. "Graph compression." Department of Computer Science and Helsinki Institute for Information Technology HIIT (2015): 1-12.
