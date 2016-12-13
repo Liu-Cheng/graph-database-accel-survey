@@ -155,6 +155,11 @@ The graph processing algorithms and frameworks are roughly classified based on t
   international symposium on High-performance parallel and distributed
   computing, pp. 239-252. ACM, 2014.
 
+- Eddy Z. Zhang, Yunlian Jiang, Ziyu Guo, Kai Tian, and Xipeng Shen. 2011.
+  On-the-fly elimination of dynamic irregularities for GPU computing. In
+  Proceedings of the sixteenth international conference on Architectural support
+  for programming languages and operating systems (ASPLOS XVI). ACM, New York, NY, USA, 369-380. 
+
 ### Load balancing
 
 ### Graph Compression
