@@ -26,6 +26,7 @@
 - [Ligra] (http://jshun.github.io/ligra/)
 - [Galois] (http://iss.ices.utexas.edu/?p=projects/galois)
 - [Trinity] (https://www.microsoft.com/en-us/research/project/trinity/)
+- [GRASP] (http://grasp.cs.ucr.edu/)
 
 ## Reading List
 
