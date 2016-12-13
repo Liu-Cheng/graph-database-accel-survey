@@ -87,6 +87,10 @@ The graph processing algorithms and frameworks are roughly classified based on t
 
 - Yuze Chi, Guohao Dai, Yu Wang, Guangyu Sun, Guoliang Li, Huazhong Yang, "NXgraph: An Efficient Graph Processing System on a Single Machine", CoRR, 2015
 
+- Cheng, Raymond, Ji Hong, Aapo Kyrola, Youshan Miao, Xuetian Weng, Ming Wu, Fan
+  Yang, Lidong Zhou, Feng Zhao, and Enhong Chen. "Kineograph: taking the pulse
+  of a fast-changing and connected world." In Proceedings of the 7th ACM
+  european conference on Computer Systems, pp. 85-98. ACM, 2012.
 
 #### Graph Processing on Distributed Systems
 
@@ -119,6 +123,14 @@ The graph processing algorithms and frameworks are roughly classified based on t
 
 - N. Engelhardt and H. K. H. So, "GraVF: A vertex-centric distributed graph processing framework on FPGAs," 2016 26th International Conference on Field Programmable Logic and Applications (FPL), Lausanne, Switzerland, 2016, pp. 1-4.
 
+- Kapre, Nachiket. "Custom FPGA-based soft-processors for sparse graph
+  acceleration." In 2015 IEEE 26th International Conference on
+  Application-specific Systems, Architectures and Processors (ASAP), pp. 9-16.
+  IEEE, 2015.
+
+- Kapre, Nachiket, and Pradeep Moorthy. "A case for embedded FPGA-based socs in
+energy-efficient acceleration of graph problems." Supercomputing frontiers and
+innovations 2, no. 3 (2015): 76-86.
 
 #### Graph Processing on ASICs
 
