@@ -67,6 +67,13 @@ The graph processing algorithms and frameworks are roughly classified based on t
 
 - Bingsheng He, Jianlong Zhong, "Medusa: Simplified Graph Processing on GPUs", IEEE Transactions on Parallel & Distributed Systems
 
+- Hong, Sungpack, Sang Kyun Kim, Tayo Oguntebi, and Kunle Olukotun.
+  "Accelerating CUDA graph algorithms at maximum warp." In ACM SIGPLAN Notices,
+  vol. 46, no. 8, pp. 267-276. ACM, 2011.
+
+- Hong, Sungpack, Sang Kyun Kim, Tayo Oguntebi, and Kunle Olukotun.
+  "Accelerating CUDA graph algorithms at maximum warp." In ACM SIGPLAN Notices,
+  vol. 46, no. 8, pp. 267-276. ACM, 2011.
 
 #### Graph Processing on CPUs
 - Sundaram, Narayanan, et al. "GraphMat: High performance graph analytics made productive." Proceedings of the VLDB Endowment 8.11 (2015): 1214-1225.
@@ -197,6 +204,14 @@ innovations 2, no. 3 (2015): 76-86.
  
 - Xirogiannopoulos, Konstantinos, Udayan Khurana, and Amol Deshpande. "GraphGen: exploring interesting graphs in relational data." Proceedings of the VLDB Endowment 8.12 (2015): 2032-2035.
 
+- Morari, Alessandro, Jesse Weaver, Oreste Villa, David Haglin, Antonino Tumeo,
+  Vito Giovanni Castellana, and John Feo. "High-Performance, Distributed
+  Dictionary Encoding of RDF Datasets." In 2015 IEEE International Conference on
+  Cluster Computing, pp. 250-253. IEEE, 2015.
+
+- Morari, Alessandro, Vito Giovanni Castellana, Oreste Villa, Jesse Weaver,
+  Gregory Todd Williams, David J. Haglin, Antonino Tumeo, and John Feo. "GEMS:
+  Graph Database Engine for Multithreaded Systems." (2015): 139-156.
 
 ## Research Groups on Database Query Acceleration
 - [Xtra Computing Group] (http://pdcc.ntu.edu.sg/xtra/)
@@ -257,8 +272,17 @@ innovations 2, no. 3 (2015): 76-86.
 ### Database Compression
 - Harald Lang, Tobias Mühlbauer, Florian Funke, Peter A. Boncz, Thomas Neumann and Alfons Kemper. “Data Blocks: Hybrid OLTP and OLAP on Compressed Storage using both Vectorization and Compilation.” SIGMOD Conference (2016).  
 
-## Interesting FPGA Open Projects
+- Lin, Chunbin, Jianguo Wang, and Yannis Papakonstantinou. "Data Compression for
+Analytics over Large-scale In-memory Column Databases." arXiv preprint
+arXiv:1606.09315 (2016).
+
+## Interesting Open Projects
 - [RIFF] (https://github.com/KastnerRG/riffa)
+
+## Cutting Edge Techniques
+- Ousterhout, John, Arjun Gopalan, Ashish Gupta, Ankita Kejriwal, Collin Lee,
+  Behnam Montazeri, Diego Ongaro et al. "The ramcloud storage system." ACM
+  Transactions on Computer Systems (TOCS) 33, no. 3 (2015): 7.
 
 ## FPGA Design Techniques 
 
@@ -274,4 +298,8 @@ innovations 2, no. 3 (2015): 76-86.
   matrix-vector multiplication kernel for energy-efficient sparse-blas on
   FPGAs." In Proceedings of the 2014 ACM/SIGDA international symposium on
   Field-programmable gate arrays, pp. 161-170. ACM, 2014. 
+
+- Jamro, Ernest, Tomasz Pabiś, Paweł Russek, and Kazimierz Wiatr. "The
+  algorithms for FPGA implementation of sparse matrices multiplication."
+  Computing and Informatics 33, no. 3 (2015): 667-684.
 
