@@ -99,6 +99,11 @@ The graph processing algorithms and frameworks are roughly classified based on t
   of a fast-changing and connected world." In Proceedings of the 7th ACM
   european conference on Computer Systems, pp. 85-98. ACM, 2012.
 
+- Geisberger, Robert, Peter Sanders, Dominik Schultes, and Daniel Delling.
+  "Contraction hierarchies: Faster and simpler hierarchical routing in road
+  networks." In International Workshop on Experimental and Efficient Algorithms,
+  pp. 319-333. Springer Berlin Heidelberg, 2008.
+
 #### Graph Processing on Distributed Systems
 
 - Gonzalez, Joseph E., et al. "Graphx: Graph processing in a distributed dataflow framework." 11th USENIX Symposium on Operating Systems Design and Implementation (OSDI 14). 2014.
@@ -138,6 +143,11 @@ The graph processing algorithms and frameworks are roughly classified based on t
 - Kapre, Nachiket, and Pradeep Moorthy. "A case for embedded FPGA-based socs in
 energy-efficient acceleration of graph problems." Supercomputing frontiers and
 innovations 2, no. 3 (2015): 76-86.
+
+- S. Zhou, C. Chelmis and V. K. Prasanna, "High-Throughput and Energy-Efficient
+  Graph Processing on FPGA," 2016 IEEE 24th Annual International Symposium on
+  Field-Programmable Custom Computing Machines (FCCM), Washington, DC, 2016, pp.
+  103-110.
 
 #### Graph Processing on ASICs
 
@@ -179,6 +189,10 @@ innovations 2, no. 3 (2015): 76-86.
   On-the-fly elimination of dynamic irregularities for GPU computing. In
   Proceedings of the sixteenth international conference on Architectural support
   for programming languages and operating systems (ASPLOS XVI). ACM, New York, NY, USA, 369-380. 
+
+- Sanders, Peter, Dominik Schultes, and Christian Vetter. "Mobile route
+  planning." In European Symposium on Algorithms, pp. 732-743. Springer Berlin
+  Heidelberg, 2008.
 
 ### Load balancing
 

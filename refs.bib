@@ -85,7 +85,7 @@
 }
 
 @article{papadimitriou2011performance,
-  title={Performance of partial reconfiguration in FPGA systems: A survey and a cost model},
+  title={Performance of aprtial reconfiguration in FPGA systems: A survey and a cost model},
   author={Papadimitriou, Kyprianos and Dollas, Apostolos and Hauck, Scott},
   journal={ACM Transactions on Reconfigurable Technology and Systems (TRETS)},
   volume={4},
@@ -971,32 +971,19 @@
         and Shen, Xipeng},
     title = {Complexity Analysis and Algorithm Design for Reorganizing Data to
         Minimize Non-coalesced Memory Accesses on GPU},
-
     booktitle = {Proceedings of the 18th ACM SIGPLAN Symposium on Principles
         and Practice of Parallel Programming},
-
     series = {PPoPP '13},
-
     year = {2013},
-
     isbn = {978-1-4503-1922-5},
-
     location = {Shenzhen, China},
-
     pages = {57--68},
-
     numpages = {12},
-
     url = {http://doi.acm.org/10.1145/2442516.2442523},
-
     doi = {10.1145/2442516.2442523},
-
     acmid = {2442523},
-
     publisher = {ACM},
-
     address = {New York, NY, USA},
-
     keywords = {computational complexity, data transformation,
         gpgpu, memory coalescing, runtime optimizations,
         thread-data remapping},
@@ -1140,4 +1127,105 @@
         Oreste and Weaver, Jesse and Williams, Gregory Todd and Haglin,
         David J and Tumeo, Antonino and Feo, John},
     year={2015}
+}
+
+@inproceedings{geisberger2008contraction,
+    title={Contraction hierarchies: Faster and simpler hierarchical routing in
+        road networks},
+    author={Geisberger, Robert and Sanders, Peter and Schultes, Dominik and
+        Delling, Daniel},
+    booktitle={International Workshop on Experimental and Efficient
+        Algorithms},
+    pages={319--333},
+    year={2008},
+    organization={Springer}
+}
+
+@article{kapre2015case,
+    author = {Nachiket Kapre and Pradeep Moorthy},
+    title = {A Case for Embedded FPGA-based SoCs in Energy-Efficient
+        Acceleration of Graph Problems},
+    journal = {Supercomputing frontiers and innovations},
+    volume = {2},
+    number = {3},
+    year = {2015},
+    keywords = {},
+    abstract = {Sparse graph problems are
+        notoriously hard to accelerate on
+            conventional platforms due to
+            irregular memory access patterns
+            resulting in underutilization of
+            memory bandwidth. These bottlenecks
+            on traditional x86-based systems
+            mean that sparse graph problems
+            scale very poorly, both in terms of
+            performance and power efficiency. A
+            cluster of embedded SoCs
+            (systems-on-chip) with
+            closely-coupled FPGA accelerators
+            can support distributed memory
+            accesses with better matched
+            low-power processing. We first
+            conduct preliminary experiments
+            across a range of COTS (commercial
+                    off-the-shelf) embedded SoCs
+            to establish promise for
+            energy-efficiency acceleration of
+            sparse problems. We select the
+            Xilinx Zynq SoC with FPGA
+            accelerators to construct a
+            prototype 32-node Beowulf cluster.
+            We develop specialized MPI routines
+            and memory DMA offload engines to
+            support irregular communication
+            efficiently. In this setup, we use
+            the ARM processor as a data
+            marshaller for local DMA traffic as
+            well as remote MPI traffic while the
+            FPGA may be used as a programmable
+            accelerator. Across a set of
+            benchmark graphs, we show that
+            32-node embedded SoC cluster can
+            exceed the energy efficiency of an
+            Intel E5-2407 by as much as 1.7× at
+            a total graph processing capacity of
+            91–95 MTEPS for graphs as large as
+            32 million nodes and edges. },
+
+    issn = {2313-8734},url = {http://superfri.org/superfri/article/view/62}
+
+}
+
+@INPROCEEDINGS{zhou2016high, 
+    author={S. Zhou and C. Chelmis and V. K. Prasanna}, 
+    booktitle={2016 IEEE 24th Annual International Symposium on
+        Field-Programmable Custom Computing Machines (FCCM)}, 
+    title={High-Throughput and Energy-Efficient Graph Processing on FPGA}, 
+    year={2016}, 
+    pages={103-110}, 
+    keywords={DRAM chips;energy conservation;field programmable gate
+        arrays;logic design;parallel architectures;performance evaluation;power
+            aware computing;trees (mathematics);FPGA design;MTEPS;concurrent
+            multiple input data processing;data layout;edge-centric
+            computing;efficient memory activation schedule;energy-efficiency
+            improvement;energy-efficient graph processing;external memory
+            bandwidth saturation;external memory performance
+            optimization;high-throughput graph processing;large-scale graph
+            processing design;million traversed edges per second;minimum
+            spanning tree algorithm;on-chip memory power consumption
+            reduction;parallel architecture;single-source shortest path
+            algorithm;throughput improvement;weakly connected component
+            algorithm;Field programmable gate arrays;Layout;Memory
+            management;Optimization;Random access memory;Throughput;Writing}, 
+    doi={10.1109/FCCM.2016.35}, 
+    month={May},
+}
+
+@inproceedings{sanders2008mobile,
+    title={Mobile route planning},
+    author={Sanders, Peter and Schultes, Dominik and Vetter, Christian},
+    booktitle={European Symposium on Algorithms},
+    pages={732--743},
+    year={2008},
+    organization={Springer}
 }
