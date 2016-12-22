@@ -290,8 +290,11 @@ innovations 2, no. 3 (2015): 76-86.
 Analytics over Large-scale In-memory Column Databases." arXiv preprint
 arXiv:1606.09315 (2016).
 
-## Interesting Open Projects
+## Interesting Open Projects & Posts
 - [RIFF] (https://github.com/KastnerRG/riffa)
+- [Overclocking Arithmetic](https://constantinides.net/2014/12/11/overclocking-friendly-arithmetic-neednt-cost-the-earth/)
+- [Some Highlights in FPGA 2016](https://constantinides.net/2016/02/25/fpga-2016-some-highlights/)
+- [Time is Precision] (https://constantinides.net/2016/12/12/time-is-precision/)
 
 ## Cutting Edge Techniques
 - Ousterhout, John, Arjun Gopalan, Ashish Gupta, Ankita Kejriwal, Collin Lee,
