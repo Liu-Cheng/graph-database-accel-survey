@@ -71,10 +71,6 @@ The graph processing algorithms and frameworks are roughly classified based on t
   "Accelerating CUDA graph algorithms at maximum warp." In ACM SIGPLAN Notices,
   vol. 46, no. 8, pp. 267-276. ACM, 2011.
 
-- Hong, Sungpack, Sang Kyun Kim, Tayo Oguntebi, and Kunle Olukotun.
-  "Accelerating CUDA graph algorithms at maximum warp." In ACM SIGPLAN Notices,
-  vol. 46, no. 8, pp. 267-276. ACM, 2011.
-
 #### Graph Processing on CPUs
 - Sundaram, Narayanan, et al. "GraphMat: High performance graph analytics made productive." Proceedings of the VLDB Endowment 8.11 (2015): 1214-1225.
 
