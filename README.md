@@ -301,6 +301,19 @@ arXiv:1606.09315 (2016).
   Behnam Montazeri, Diego Ongaro et al. "The ramcloud storage system." ACM
   Transactions on Computer Systems (TOCS) 33, no. 3 (2015): 7.
 
+- Ho, Chen-Han, Sung Jin Kim, and Karthikeyan Sankaralingam. "Efficient
+  execution of memory access phases using dataflow specialization." In ACM
+  SIGARCH Computer Architecture News, vol. 43, no. 3, pp. 118-130. ACM, 2015.
+
+- Kumar, Snehasish, Arrvindh Shriraman, Vijayalakshmi Srinivasan, Dan Lin, and
+  Jordon Phillips. "SQRL: hardware accelerator for collecting software data
+  structures." In Proceedings of the 23rd international conference on Parallel
+  architectures and compilation, pp. 475-476. ACM, 2014.
+
+- Schkufza, Eric, Rahul Sharma, and Alex Aiken. "Stochastic optimization of
+  floating-point programs with tunable precision." ACM SIGPLAN Notices 49, no. 6
+  (2014): 53-64.
+
 ## FPGA Design Techniques 
 
 ### FPGA Design Tools and Frameworks
