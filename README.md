@@ -310,7 +310,7 @@ arXiv:1606.09315 (2016).
   floating-point programs with tunable precision." ACM SIGPLAN Notices 49, no. 6
   (2014): 53-64.
 
-## FPGA Design Techniques 
+## Interesting Research Topic
 
 ### FPGA Design Tools and Frameworks
 - Jacobsen, M., Richmond, D., Hogains, M., and Kastner, R. “RIFFA 2.1: A reusable integration framework for FPGA accelerators.” ACM Transactions on Reconfigurable Technology and Systems (TRETS), September 2015.  
@@ -329,3 +329,14 @@ arXiv:1606.09315 (2016).
   algorithms for FPGA implementation of sparse matrices multiplication."
   Computing and Informatics 33, no. 3 (2015): 667-684.
 
+- Giefers, Heiner, Peter Staar, Costas Bekas, and Christoph Hagleitner.
+  "Analyzing the energy-efficiency of sparse matrix multiplication on
+  heterogeneous systems: A comparative study of GPU, Xeon Phi and FPGA." In
+  Performance Analysis of Systems and Software (ISPASS), 2016 IEEE International
+  Symposium on, pp. 46-56. IEEE, 2016.
+
+### Manycore Simulation and Scalability Research
+- Yu, Xiangyao, George Bezerra, Andrew Pavlo, Srinivas Devadas, and Michael
+  Stonebraker. "Staring into the abyss: An evaluation of concurrency control
+  with one thousand cores." Proceedings of the VLDB Endowment 8, no. 3 (2014):
+  209-220.
