@@ -100,6 +100,28 @@ The graph processing algorithms and frameworks are roughly classified based on t
   networks." In International Workshop on Experimental and Efficient Algorithms,
   pp. 319-333. Springer Berlin Heidelberg, 2008.
 
+- Zheng, Da, Disa Mhembere, Randal Burns, Joshua Vogelstein, Carey E. Priebe,
+  and Alexander S. Szalay. "FlashGraph: Processing billion-node graphs on an
+  array of commodity SSDs." In 13th USENIX Conference on File and Storage
+  Technologies (FAST 15), pp. 45-58. 2015.
+
+- Yuan, Pingpeng, Wenya Zhang, Changfeng Xie, Hai Jin, Ling Liu, and Kisung Lee.
+  "Fast iterative graph computation: A path centric approach." In Proceedings of
+  the International Conference for High Performance Computing, Networking,
+  Storage and Analysis, pp. 401-412. IEEE Press, 2014.
+
+- Najeebullah, Kamran, Kifayat Ullah Khan, Waqas Nawaz, and Young-Koo Lee. "BPP:
+  Large Graph Storage for Efficient Disk Based Processing." arXiv preprint
+  arXiv:1401.2327 (2014).
+
+- Nilakant, Karthik, Valentin Dalibard, Amitabha Roy, and Eiko Yoneki.
+  "PrefEdge: SSD prefetcher for large-scale graph traversal." In Proceedings of
+  International Conference on Systems and Storage, pp. 1-12. ACM, 2014.
+
+- Nguyen, Donald, Andrew Lenharth, and Keshav Pingali. "A lightweight
+  infrastructure for graph analytics." In Proceedings of the Twenty-Fourth ACM
+  Symposium on Operating Systems Principles, pp. 456-471. ACM, 2013.
+
 #### Graph Processing on Distributed Systems
 
 - Gonzalez, Joseph E., et al. "Graphx: Graph processing in a distributed dataflow framework." 11th USENIX Symposium on Operating Systems Design and Implementation (OSDI 14). 2014.
@@ -340,3 +362,14 @@ arXiv:1606.09315 (2016).
   Stonebraker. "Staring into the abyss: An evaluation of concurrency control
   with one thousand cores." Proceedings of the VLDB Endowment 8, no. 3 (2014):
   209-220.
+
+- Fu, Yaosheng, and David Wentzlaff. "PriME: A parallel and distributed
+  simulator for thousand-core chips." In Performance Analysis of Systems and
+  Software (ISPASS), 2014 IEEE International Symposium on, pp. 116-125. IEEE,
+  2014.
+
+- Miller, Jason E., Harshad Kasture, George Kurian, Charles Gruenwald, Nathan
+  Beckmann, Christopher Celio, Jonathan Eastep, and Anant Agarwal. "Graphite: A
+  distributed parallel simulator for multicores." In HPCA-16 2010 The Sixteenth
+  International Symposium on High-Performance Computer Architecture, pp. 1-12.
+  IEEE, 2010.
