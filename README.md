@@ -301,6 +301,10 @@ innovations 2, no. 3 (2015): 76-86.
 
 - Zeke Wang, Huiyan Cheah, Johns Paul, Bingsheng He, and Wei Zhang. 2016. Accelerating Database Query Processing on OpenCL-based FPGAs (Abstract Only). In Proceedings of the 2016 ACM/SIGDA International Symposium on Field-Programmable Gate Arrays (FPGA '16). ACM, New York, NY
 
+- Barthels, Claude, Ingo Müller, Timo Schneider, Gustavo Alonso, and Torsten
+  Hoefler. "Distributed Join Algorithms on Thousands of Cores." Proceedings of
+  the VLDB Endowment 10, no. 5 (2017).
+
 ### Database Compression
 - Harald Lang, Tobias Mühlbauer, Florian Funke, Peter A. Boncz, Thomas Neumann and Alfons Kemper. “Data Blocks: Hybrid OLTP and OLAP on Compressed Storage using both Vectorization and Compilation.” SIGMOD Conference (2016).  
 
@@ -373,3 +377,8 @@ arXiv:1606.09315 (2016).
   distributed parallel simulator for multicores." In HPCA-16 2010 The Sixteenth
   International Symposium on High-Performance Computer Architecture, pp. 1-12.
   IEEE, 2010.
+
+- Carlson, Trevor E., Wim Heirman, and Lieven Eeckhout. "Sniper: exploring the
+  level of abstraction for scalable and accurate parallel multi-core
+  simulation." In Proceedings of 2011 International Conference for High
+  Performance Computing, Networking, Storage and Analysis, p. 52. ACM, 2011.
