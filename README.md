@@ -227,6 +227,11 @@ innovations 2, no. 3 (2015): 76-86.
 
 - Julian Shun, Laxman Dhulipala and Guy Blelloch. Smaller and Faster: Parallel Processing of Compressed Graphs with Ligra+. Proceedings of the IEEE Data Compression Conference (DCC), pp. 403-412, 2015
 
+### Graph Approximate Computing
+- Shang, Zechao, and Jeffrey Xu Yu. "Auto-approximation of graph computing."
+  Proceedings of the VLDB Endowment 7, no. 14 (2014): 1833-1844.
+
+
 ## Graph Database
 
 - Shi, Jiaxin, Youyang Yao, Rong Chen, Haibo Chen, and Feifei Li. "Fast and
