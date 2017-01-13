@@ -1397,3 +1397,84 @@
     year={2014},
     publisher={VLDB Endowment}
 }
+
+@article{Shang2016,
+    abstract = {Large graphs are getting increasingly popular and even
+        indispensable in many applications, for example, in social media data,
+        large networks, and knowledge bases. Efficient graph analytics thus
+            becomes an important subject of study. To increase efficiency and
+            scalability, in-memory computation and parallelism have been
+            explored extensively to speed up various graph analytical workloads.
+            In many graph analytical engines (e.g., Pregel, Neo4j, GraphLab),
+        parallelism is achieved via one of the three concurrency control models,
+        namely, bulk synchronization processing (BSP), asynchronous processing,
+        and synchronous processing. Among them, synchronous processing has the
+            potential to achieve the best performance due to fine-grained
+            parallelism, while ensuring the correctness and the convergence of
+            the computation, if an effective concurrency control scheme is used.
+            This paper explores the topological properties of the underlying
+            graph to design and implement a highly effective concurrency control
+            scheme for efficient synchronous processing in an in-memory graph
+            analytical engine. Our design uses a novel hybrid approach that
+            combines 2PL (two-phase locking) with OCC (optimistic concurrency
+                    control), for high degree and low degree vertices in a graph
+            respectively. Our results show that the proposed hybrid synchronous
+            scheduler has significantly outperformed other synchronous
+            schedulers in existing graph analytical engines, as well as BSP and
+            asynchronous schedulers.},
+    author = {Shang, Zechao and Li, Feifei and Yu, Jeffrey Xu and Zhang, Zhiwei
+        and Cheng, Hong},
+    doi = {10.1145/2882903.2915238},
+    isbn = {9781450335317},
+    issn = {07308078},
+    journal = {Sigmod},
+    pages = {463--478},
+    title = {{Graph analytics through fine-grained parallelism}},
+    url = {http://dl.acm.org/citation.cfm?doid=2882903.2915238},
+    year = {2016}
+}
+
+@inproceedings{roy2013x-stream,
+    title={X-Stream: edge-centric graph processing using streaming
+        partitions},
+    author={Roy, Amitabha and Mihailovic, Ivo and Zwaenepoel, Willy},
+    booktitle={Proceedings of the Twenty-Fourth ACM Symposium on Operating
+        Systems Principles},
+    pages={472--488},
+    year={2013},
+    organization={ACM}
+}
+
+@article{shi2015frog,
+    title={Frog: Asynchronous graph processing on GPU with hybrid coloring
+        model},
+    author={Shi, Xuanhua and Liang, J and Luo, X and Di, S and He, B and Lu,
+        L and Jin, Hai},
+    journal={Huazhong University of Science and Technology, Tech. Rep.
+        HUSTCGCL-TR-402},
+    year={2015}
+}
+
+@inproceedings{akin2014understanding,
+    title={Understanding the design space of dram-optimized hardware FFT
+        accelerators},
+    author={Ak{\i}n, Berkin and Franchetti, Franz and Hoe, James C},
+    booktitle={2014 IEEE 25th International Conference on
+        Application-Specific Systems, Architectures and Processors},
+    pages={248--255},
+    year={2014},
+    organization={IEEE}
+}
+
+@inproceedings{akin2015data,
+    title={Data reorganization in memory using 3d-stacked dram},
+    author={Akin, Berkin and Franchetti, Franz and Hoe, James C},
+    booktitle={ACM SIGARCH Computer Architecture News},
+    volume={43},
+    number={3},
+    pages={131--143},
+    year={2015},
+    organization={ACM}
+}
+
+

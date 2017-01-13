@@ -41,6 +41,10 @@ The graph processing algorithms and frameworks are roughly classified based on t
 
 
 #### Graph Processing on GPUs
+- Shi, Xuanhua, J. Liang, X. Luo, S. Di, B. He, L. Lu, and Hai Jin. "Frog:
+  Asynchronous graph processing on GPU with hybrid coloring model." Huazhong
+  University of Science and Technology, Tech. Rep. HUSTCGCL-TR-402 (2015).
+
 - Farzad Khorasani, Keval Vora, Rajiv Gupta, and Laxmi N. Bhuyan. 2014. CuSha:
   vertex-centric graph processing on GPUs. In Proceedings of the 23rd
   international symposium on High-performance parallel and distributed computing
@@ -72,6 +76,14 @@ The graph processing algorithms and frameworks are roughly classified based on t
   vol. 46, no. 8, pp. 267-276. ACM, 2011.
 
 #### Graph Processing on CPUs
+- Roy, Amitabha, Ivo Mihailovic, and Willy Zwaenepoel. "X-Stream: edge-centric
+  graph processing using streaming partitions." In Proceedings of the
+  Twenty-Fourth ACM Symposium on Operating Systems Principles, pp. 472-488. ACM,
+  2013.
+
+- Shang, Zechao, Feifei Li, Jeffrey Xu Yu, Zhiwei Zhang, and Hong Cheng. "Graph
+  Analytics Through Fine-Grained Parallelism. SIGMOD, 2016"
+
 - Sundaram, Narayanan, et al. "GraphMat: High performance graph analytics made productive." Proceedings of the VLDB Endowment 8.11 (2015): 1214-1225.
 
 - Julian Shun. An Evaluation of Parallel Eccentricity Estimation Algorithms on
@@ -342,6 +354,17 @@ arXiv:1606.09315 (2016).
   (2014): 53-64.
 
 ## Interesting Research Topic
+
+### Memory access related optimization
+- Akın, Berkin, Franz Franchetti, and James C. Hoe. "Understanding the design
+  space of dram-optimized hardware FFT accelerators." In 2014 IEEE 25th
+  International Conference on Application-Specific Systems, Architectures and
+  Processors, pp. 248-255. IEEE, 2014.
+
+- Akin, Berkin, Franz Franchetti, and James C. Hoe. "Data reorganization in
+  memory using 3d-stacked dram." In ACM SIGARCH Computer Architecture News, vol.
+  43, no. 3, pp. 131-143. ACM, 2015.
+
 
 ### FPGA Design Tools and Frameworks
 - Jacobsen, M., Richmond, D., Hogains, M., and Kastner, R. “RIFFA 2.1: A reusable integration framework for FPGA accelerators.” ACM Transactions on Reconfigurable Technology and Systems (TRETS), September 2015.  
