@@ -135,6 +135,10 @@ The graph processing algorithms and frameworks are roughly classified based on t
   Symposium on Operating Systems Principles, pp. 456-471. ACM, 2013.
 
 #### Graph Processing on Distributed Systems
+- Venkataraman, Shivaram, Erik Bodzsar, Indrajit Roy, Alvin AuYoung, and Robert
+  S. Schreiber. "Presto: distributed machine learning and graph processing with
+  sparse matrices." In Proceedings of the 8th ACM European Conference on
+  Computer Systems, pp. 197-210. ACM, 2013.
 
 - Gonzalez, Joseph E., et al. "Graphx: Graph processing in a distributed dataflow framework." 11th USENIX Symposium on Operating Systems Design and Implementation (OSDI 14). 2014.
 
@@ -356,6 +360,10 @@ arXiv:1606.09315 (2016).
 ## Interesting Research Topic
 
 ### Memory access related optimization
+- Appuswamy, Raja, Matthaios Olma, and Anastasia Ailamaki. "Scaling the Memory
+  Power Wall With DRAM-Aware Data Management." In Proceedings of the 11th
+  International Workshop on Data Management on New Hardware, p. 3. ACM, 2015.
+
 - Akın, Berkin, Franz Franchetti, and James C. Hoe. "Understanding the design
   space of dram-optimized hardware FFT accelerators." In 2014 IEEE 25th
   International Conference on Application-Specific Systems, Architectures and
@@ -365,6 +373,10 @@ arXiv:1606.09315 (2016).
   memory using 3d-stacked dram." In ACM SIGARCH Computer Architecture News, vol.
   43, no. 3, pp. 131-143. ACM, 2015.
 
+- Hsieh, Kevin, Samira Khan, Nandita Vijaykumar, Kevin K. Chang, Amirali
+  Boroumand, Saugata Ghose, and Onur Mutlu. "Accelerating pointer chasing in
+  3D-stacked memory: Challenges, mechanisms, evaluation." In Computer Design
+  (ICCD), 2016 IEEE 34th International Conference on, pp. 25-32. IEEE, 2016.
 
 ### FPGA Design Tools and Frameworks
 - Jacobsen, M., Richmond, D., Hogains, M., and Kastner, R. “RIFFA 2.1: A reusable integration framework for FPGA accelerators.” ACM Transactions on Reconfigurable Technology and Systems (TRETS), September 2015.  
