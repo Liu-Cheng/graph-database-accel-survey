@@ -1,18 +1,18 @@
 # Literature Review
 ## Conferences
 - [ISCA2016] (http://isca2016.eecs.umich.edu/) [ISCA2015] (http://www.ece.cmu.edu/calcm/isca2015/)
-- [Micro2016]
-- [ASPLOS2016]
-- [HPCA2016]
+- [Micro2016] (https://www.microarch.org/micro49/) [Micro2015] (https://www.microarch.org/micro48/)
+- [ASPLOS2016] (https://www.ece.cmu.edu/calcm/asplos2016/)
+- [HPCA2016] (http://hpca22.site.ac.upc.edu/index.php/program/conference-program/) [HPCA2015] (http://darksilicon.org/hpca/)
 - [SC2016]
 - [VLDB2016]
 - [OSDI2016]
 - [EuroSys2016]
 - [ICDE2016]
 - [SIGMOD2016]
-- [FCCM2016]
-- [FPGA2016]
-- [FPL2016] (http://www.fpl2016.org/)
+- [FCCM2016] (http://fccm.org/2016/cfp.html) [FCCM2015] (http://fccm.org/2015/)
+- [FPGA2016] (http://www.isfpga.org/fpga2016/index.html) [FPGA2015] (http://www.eecs.ucf.edu/isfpga/)
+- [FPL2016] (http://www.fpl2016.org/) [FPL2015] (http://www.fpl2015.org/?page=tech_sessions#arch3)
 - [FPT2016]
 - [ASAP2016]
 
@@ -160,6 +160,15 @@ The graph processing algorithms and frameworks are roughly classified based on t
 
 
 #### Graph Processing on FPGAs
+- Umuroglu, Yaman, Donn Morrison, and Magnus Jahre. "Hybrid breadth-first search
+  on a single-chip FPGA-CPU heterogeneous platform." In Field Programmable Logic
+  and Applications (FPL), 2015 25th International Conference on, pp. 1-8. IEEE,
+  2015.
+
+- Oguntebi and Kunle Olukotun. 2016. GraphOps: A Dataflow Library for Graph
+ Analytics Acceleration. In Proceedings of the 2016 ACM/SIGDA International
+ Symposium on Field-Programmable Gate Arrays (FPGA '16). ACM, New York, NY, USA,
+ 111-117. DOI: http://dx.doi.org/10.1145/2847263.2847337
 
 - Nurvitadhi, Eriko, et al. "GraphGen: An FPGA framework for vertex-centric graph computation." Field-Programmable Custom Computing Machines (FCCM), 2014 IEEE 22nd Annual International Symposium on. IEEE, 2014.
 
@@ -360,6 +369,11 @@ arXiv:1606.09315 (2016).
 ## Interesting Research Topic
 
 ### Memory access related optimization
+- Guo, Qi, Tze-Meng Low, Nikolaos Alachiotis, Berkin Akin, Larry Pileggi, James
+  C. Hoe, and Franz Franchetti. "Enabling portable energy efficiency with memory
+  accelerated library." In Proceedings of the 48th International Symposium on
+  Microarchitecture, pp. 750-761. ACM, 2015.
+
 - Appuswamy, Raja, Matthaios Olma, and Anastasia Ailamaki. "Scaling the Memory
   Power Wall With DRAM-Aware Data Management." In Proceedings of the 11th
   International Workshop on Data Management on New Hardware, p. 3. ACM, 2015.
@@ -386,6 +400,9 @@ arXiv:1606.09315 (2016).
 - Niu, Xinyu, Wayne Luk, and Yu Wang. "EURECA: On-chip configuration generation for effective dynamic data access." Proceedings of the 2015 ACM/SIGDA International Symposium on Field-Programmable Gate Arrays. ACM, 2015.
 
 ### Sparse Matrix Computing Acceleration on FPGAs
+- Umuroglu, Yaman, and Magnus Jahre. "Random access schemes for efficient FPGA
+  SpMV acceleration." Microprocessors and Microsystems (2016).
+
 - Dorrance, Richard, Fengbo Ren, and Dejan Marković. "A scalable sparse
   matrix-vector multiplication kernel for energy-efficient sparse-blas on
   FPGAs." In Proceedings of the 2014 ACM/SIGDA international symposium on

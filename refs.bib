@@ -1398,30 +1398,8 @@
     publisher={VLDB Endowment}
 }
 
-@article{Shang2016,
-    abstract = {Large graphs are getting increasingly popular and even
-        indispensable in many applications, for example, in social media data,
-        large networks, and knowledge bases. Efficient graph analytics thus
-            becomes an important subject of study. To increase efficiency and
-            scalability, in-memory computation and parallelism have been
-            explored extensively to speed up various graph analytical workloads.
-            In many graph analytical engines (e.g., Pregel, Neo4j, GraphLab),
-        parallelism is achieved via one of the three concurrency control models,
-        namely, bulk synchronization processing (BSP), asynchronous processing,
-        and synchronous processing. Among them, synchronous processing has the
-            potential to achieve the best performance due to fine-grained
-            parallelism, while ensuring the correctness and the convergence of
-            the computation, if an effective concurrency control scheme is used.
-            This paper explores the topological properties of the underlying
-            graph to design and implement a highly effective concurrency control
-            scheme for efficient synchronous processing in an in-memory graph
-            analytical engine. Our design uses a novel hybrid approach that
-            combines 2PL (two-phase locking) with OCC (optimistic concurrency
-                    control), for high degree and low degree vertices in a graph
-            respectively. Our results show that the proposed hybrid synchronous
-            scheduler has significantly outperformed other synchronous
-            schedulers in existing graph analytical engines, as well as BSP and
-            asynchronous schedulers.},
+@article{Shang2016large,
+    title = {{Graph analytics through fine-grained parallelism}},
     author = {Shang, Zechao and Li, Feifei and Yu, Jeffrey Xu and Zhang, Zhiwei
         and Cheng, Hong},
     doi = {10.1145/2882903.2915238},
@@ -1429,7 +1407,6 @@
     issn = {07308078},
     journal = {Sigmod},
     pages = {463--478},
-    title = {{Graph analytics through fine-grained parallelism}},
     url = {http://dl.acm.org/citation.cfm?doid=2882903.2915238},
     year = {2016}
 }
@@ -1510,3 +1487,55 @@
     year={2015},
     organization={ACM}
 }
+
+@article{umuroglu2016random,
+    title={Random access schemes for efficient FPGA SpMV acceleration},
+    author={Umuroglu, Yaman and Jahre, Magnus},
+    journal={Microprocessors and Microsystems},
+    year={2016},
+    publisher={Elsevier}
+}
+
+@inproceedings{guo2015enabling,
+    title={Enabling portable energy efficiency with memory accelerated
+        library},
+    author={Guo, Qi and Low, Tze-Meng and Alachiotis, Nikolaos and Akin,
+        Berkin and Pileggi, Larry and Hoe, James C and Franchetti, Franz},
+    booktitle={Proceedings of the 48th International Symposium on
+        Microarchitecture},
+    pages={750--761},
+    year={2015},
+    organization={ACM}
+}
+
+@inproceedings{Oguntebi:2016:GDL:2847263.2847337,
+    author = {Oguntebi, Tayo and Olukotun, Kunle},
+    title = {GraphOps: A Dataflow Library for Graph Analytics Acceleration},
+    booktitle = {Proceedings of the 2016 ACM/SIGDA International Symposium on
+        Field-Programmable Gate Arrays},
+    series = {FPGA '16},
+    year = {2016},
+    isbn = {978-1-4503-3856-1},
+    location = {Monterey, California, USA},
+    pages = {111--117},
+    numpages = {7},
+    url = {http://doi.acm.org/10.1145/2847263.2847337},
+    doi = {10.1145/2847263.2847337},
+    acmid = {2847337},
+    publisher = {ACM},
+    address = {New York, NY, USA},
+    keywords = {accelerator, analytics, dataflow, fpga, graph
+        analysis},
+} 
+
+@inproceedings{umuroglu2015hybrid,
+    title={Hybrid breadth-first search on a single-chip FPGA-CPU heterogeneous
+        platform},
+    author={Umuroglu, Yaman and Morrison, Donn and Jahre, Magnus},
+    booktitle={Field Programmable Logic and Applications (FPL), 2015 25th
+        International Conference on},
+    pages={1--8},
+    year={2015},
+    organization={IEEE}
+}
+
