@@ -4,8 +4,8 @@
 - [Micro2016] (https://www.microarch.org/micro49/) [Micro2015] (https://www.microarch.org/micro48/)
 - [ASPLOS2016] (https://www.ece.cmu.edu/calcm/asplos2016/)
 - [HPCA2016] (http://hpca22.site.ac.upc.edu/index.php/program/conference-program/) [HPCA2015] (http://darksilicon.org/hpca/)
-- [SC2016]
-- [VLDB2016]
+- [SC2016] (http://sc16.supercomputing.org/conference-components/technical-program-tues-fri/technical-papers) [SC2015] (http://sc15.supercomputing.org/program/technical-papers.html)
+- [VLDB2016] (http://vldb2016.persistent.com/)
 - [OSDI2016]
 - [EuroSys2016]
 - [ICDE2016]
@@ -13,8 +13,8 @@
 - [FCCM2016] (http://fccm.org/2016/cfp.html) [FCCM2015] (http://fccm.org/2015/)
 - [FPGA2016] (http://www.isfpga.org/fpga2016/index.html) [FPGA2015] (http://www.eecs.ucf.edu/isfpga/)
 - [FPL2016] (http://www.fpl2016.org/) [FPL2015] (http://www.fpl2015.org/?page=tech_sessions#arch3)
-- [FPT2016]
-- [ASAP2016]
+- [FPT2016] (http://www.icfpt2016.org/index.jsp) [FPT2015] (http://fpt.massey.ac.nz/)
+- [ASAP2016] (http://www.asap2016.org/) [ASAP2015] (http://www.eecg.toronto.edu/asap2015/)
 
 
 ## Research Groups on Graph Acceleration Research
